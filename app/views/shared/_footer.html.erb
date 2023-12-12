@@ -1,0 +1,106 @@
+<%= render 'pages/modals/price' %>
+<footer>
+  <div class="footer-header py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+            <span class="d-block d-lg-inline-block mb-5 align-middle footer-title">Apoio</span>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-3 col-md-3 col-sm-12 mb-5 text-center text-lg-right">
+                <%= link_to image_tag('companies/logo-sebrae.png', alt: 'Apoio à Hospedin: logomarca Sebrae'), 'http://www.sebrae.com.br', target: '_blank' %>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 mb-5 text-center text-lg-right">
+                <%= link_to image_tag('companies/logo-startupsc.png', alt: 'Apoio à Hospedin: logomarca Startup SC'), 'https://www.startupsc.com.br', target: '_blank' %>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 mb-5 text-center text-lg-right"></div>
+              <div class="col-lg-3 col-md-3 col-sm-12 mb-5 text-center text-lg-right"></div>
+            </div>
+          </div>
+        <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+          <span class="d-block d-lg-inline-block mb-5  align-middle footer-title">Parceiro</span>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-3 col-md-3 col-sm-12 mb-5 text-center text-lg-right">
+              <%= link_to image_tag('partners/hsystem.png', alt: 'Parceiro da Hospedin: logomarca HSystem'), 'https://www.hsystem.com.br', target: '_blank' %>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 mb-5 text-center text-lg-right">
+              <%= link_to image_tag('partners/bukly.png', alt: 'Parceiro da Hospedin: logomarca Bukly'), 'https://www.bukly.com/pt-br', target: '_blank' %>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 mb-5 text-center text-lg-right">
+              <%= link_to image_tag('partners/omnibees.png', alt: 'Parceiro da Hospedin: logomarca Omnibees'), 'https://omnibees.com', target: '_blank' %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-2 mb-4 mb-lg-0 text-center text-lg-left">
+          <span class="d-block mb-2 mb-lg-3 footer-title">Produtos</span>
+          <%= link_to 'Software Hoteleiro', root_path, class: 'd-block white' %>
+          <%= link_to 'Channel Manager', channels_path, class: 'd-block white' %>
+          <%= link_to 'Motor de Reservas', engine_path, class: 'd-block white' %>
+        </div>
+        <div class="col-12 col-lg-2 mb-4 mb-lg-0 text-center text-lg-left">
+          <span class="d-block mb-2 mb-lg-3 footer-title">Educação</span>
+          <%= link_to 'Blog', 'http://blog.hospedin.com', target: '_blank', class: 'd-block white' %>
+          <%= link_to 'Cursos', courses_path, class: 'd-block white' %>
+          <%= link_to 'Materiais Educativos', libraries_path, class: 'd-block white' %>
+        </div>
+        <div class="col-12 col-lg-2 mb-4 mb-lg-0 text-center text-lg-left">
+          <span class="d-block mb-2 mb-lg-3 footer-title">Empresa</span>
+          <%= link_to 'Quem somos', about_path, class: 'd-block white' %>
+          <%= link_to 'Trabalhe conosco', 'javascript:void(0);', class: 'd-block white', 'data-paperform-id': 'talentos-hospedin', 'data-popup-button': '1' %>
+          <%= link_to 'Seja nosso Parceiro', 'https://programa-parceiros-hospedin.paperform.co/', target: '_blank', class: 'd-block white' %>
+          <%= link_to 'Contato', 'javascript:void(0);', class: 'd-block white', onclick: "Intercom('showNewMessage');" %>
+        </div>
+        <div class="col-12 col-lg-3 text-center text-lg-left">
+          <span class="d-block mb-2 mb-lg-3 footer-title">Suporte</span>
+          <span class="d-block">Comercial: (48) 3354-1750</span>
+          <span class="d-block"><%= link_to 'Whatsapp: (48) 9 9135-0886', 'https://wa.me/5548991350886?text=Oi, tudo bem?', class: 'd-block white', target: '_blank' %></span>
+          <span class="d-block">Email: contato@hospedin.com</span>
+        </div>
+        <div class="col-12 col-lg-3">
+          <span class="d-block mb-0 mb-lg-3 footer-title">&nbsp;</span>
+          <p class="text-center text-lg-left">
+            Atendimento de segunda à sexta-feira das 09h00 às 12h00 e 13h30 às 18h00.
+          </p>
+        </div>
+      </div>
+      <div class="footer-after py-5 py-lg-4">
+        <div class="row">
+          <div class="col-12 col-lg-2 text-center text-lg-left mb-4 mb-lg-0">
+            <%= image_tag 'countries/ico-br.png', class: 'mr-2', alt: 'Hospedin uma empresa brasileira: Bandeira do Brasil' %>
+            <% image_tag 'countries/ico-us.png', class: 'mr-2' %>
+            <% image_tag 'countries/ico-es.png' %>
+          </div>
+          <div class="col-12 col-lg-4 mr-auto text-center text-lg-left mb-4 mb-lg-0">
+            <%= link_to 'Termos de serviço', terms_path, class: 'd-block d-lg-inline-block white mr-lg-4 mb-2 mb-lg-0' %>
+            <%= link_to 'Política de privacidade', privacy_path, class: 'white' %>
+          </div>
+          <div class="col-auto social-links text-lg-right mx-auto mx-lg-0">
+            <%= link_to 'https://anchor.fm/hospedin-break', target: '_blank', class: 'social social-pd' do %>
+               <% image_tag 'icons/social/microphone.svg' %>
+            <% end %>
+            <%= link_to 'https://www.facebook.com/hospedin', target: '_blank', class: 'social social-fb' do %>
+               <% image_tag 'icons/social/facebook-logo.svg' %>
+            <% end %>
+            <%= link_to 'https://pt.linkedin.com/company/hospedin', target: '_blank', class: 'social social-lk' do %>
+               <% image_tag 'icons/social/linkedin-logo.svg' %>
+            <% end %>
+            <%= link_to 'https://www.instagram.com/hospedin', target: '_blank', class: 'social social-ig' do %>
+               <% image_tag 'icons/social/instagram-logo.svg' %>
+            <% end %>
+            <%= link_to 'https://www.youtube.com/hospedin', target: '_blank', class: 'social social-yt' do %>
+               <% image_tag 'icons/social/youtube-logo.svg' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

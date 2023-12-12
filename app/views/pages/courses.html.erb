@@ -1,0 +1,101 @@
+<%= title "Cursos para Hotelaria - Hospedin" %>
+<%= meta_description "Aprimore sua gestão hoteleira através dos nossos cursos voltados para hotéis e pousadas" %>
+<%= navbar_color('bg-green') %>
+
+<section class="bg-green mask-green library-banner">
+  <div class="container text-center text-lg-left">
+    <h1 class="white mb-2 h1">Cursos</h1>
+    <p class="white">Aprimore sua gestão através dos nossos cursos para hotelaria.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="course-card bg-yellow rounded p-4 mb-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 col-lg-7">
+          <%= link_to 'https://educativos.hospedin.com/curso-de-marketing-digital-hoteleiro', target: '_blank' do %>
+            <%= image_tag 'courses/marketing-digital-hoteleiro.jpg', class: 'img-fluid mb-4 mb-md-0', title: 'Curso de Marketing Digital Hoteleiro', alt: 'Curso de Marketing Hoteleiro Hospedin: Como usar as redes sociais para aumentar as suas reservas' %>
+          <% end %>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 text-center text-md-left">
+          <h2 class="h2 dark-purple mb-2">Curso de Marketing Digital Hoteleiro</h2>
+          <p class="purple mb-4">Como usar as <strong>REDES SOCIAS</strong> para aumentar as suas <strong>RESERVAS</strong></p>
+          <%= link_to 'Inscreva-se no curso', 'https://educativos.hospedin.com/curso-de-marketing-digital-hoteleiro', class: 'btn btn-white btn-white-hover-alt', target: '_blank' %>
+        </div>
+      </div>
+    </div>
+
+    <% if 1 == 2 %>
+    <div class="course-card bg-light-blue rounded p-4 mb-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 col-lg-7">
+          <img class="img-fluid mb-4 mb-md-0" src="https://via.placeholder.com/1314x900">
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 text-center white text-md-left">
+          <h3 class="h3 mb-2">Curso de Gestão de Hotéis e Pousadas</h3>
+          <p class="mb-4">Acesse rapidamente todas as informações sobre seus hóspedes, acomodações e reservas.</p>
+          <button class="btn btn-white">Inscreva-se no curso</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card bg-purple rounded p-4 mb-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 col-lg-7">
+          <img class="img-fluid mb-4 mb-md-0" src="https://via.placeholder.com/1314x900">
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 text-center white text-md-left">
+          <h3 class="h3 mb-2">Curso de Gestão de Hotéis e Pousadas</h3>
+          <p class="mb-4">Acesse rapidamente todas as informações sobre seus hóspedes, acomodações e reservas.</p>
+          <button class="btn btn-white">Inscreva-se no curso</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card bg-red rounded p-4 mb-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 col-lg-7">
+          <img class="img-fluid mb-4 mb-md-0" src="https://via.placeholder.com/1314x900">
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 text-center white text-md-left">
+          <h3 class="h3 mb-2">Curso de Gestão de Hotéis e Pousadas</h3>
+          <p class="mb-4">Acesse rapidamente todas as informações sobre seus hóspedes, acomodações e reservas.</p>
+          <button class="btn btn-white">Inscreva-se no curso</button>
+        </div>
+      </div>
+    </div>
+    <% end %>
+
+  </div>
+</section>
+
+<%= render 'shared/newsletter_form'%>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-4 bg-light-blue">
+        <div class="card-product text-center">
+          <h2 class="white"><%= link_to "Channel Manager", channels_path %></h2>
+          <p class="white mx-auto">Gerencie as reservas dos canais de venda em um só lugar</p>
+          <%= link_to 'Saiba mais', channels_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-purple">
+        <div class="card-product text-center">
+          <h2 class="white"><%= link_to "Sistema Hoteleiro (PMS)", root_path %></h2>
+          <p class="white mx-auto">Software de produtividade para pousadas, hotéis, hostels e meios de hospedagens</p>
+          <%= link_to 'Saiba mais', root_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-yellow">
+        <div class="card-product text-center">
+          <h2 class="dark-purple"><%= link_to "Motor de Reservas", engine_path %></h2>
+          <p class="purple mx-auto">Receba reservas diretamente do seu site</p>
+          <%= link_to 'Saiba mais', engine_path, class: 'btn btn-white btn-white-hover-alt btn-shadow' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

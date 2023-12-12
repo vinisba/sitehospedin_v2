@@ -1,3 +1,6 @@
+<%= title "Hospedin - Software e Sistema para Hotel, Pousada, Hostel e Similares" %>
+<%= meta_description "Tenha total controle das suas reservas, acomodações e hóspedes com o Hospedin, o melhor Sistema de Gestão para Hotel, Pousada, Hostel e Similares." %>
+<%= navbar_color('bg-purple') %>
 <section class="bg-purple mask-purple banner homepage-banner">
   <div class="container">
       <div class="d-flex flex-column align-items-center text-center">
@@ -50,7 +53,7 @@
           </div>
         </div>
       </div>
-      <%= link_to 'Saiba mais sobre o PMS', "#", class: 'btn btn-dark-blue' %>
+      <%= link_to 'Saiba mais sobre o PMS', pms_path, class: 'btn btn-dark-blue' %>
     </div>
     <div class="home-products-items text-center pb-5 mb-4">
       <span class="dark-purple tag tag-aqua">Venda em mais canais e economize tempo</span>
@@ -75,7 +78,7 @@
           </div>
         </div>
       </div>
-      <%= link_to 'Saiba mais sobre o Gestor de Canais', "#", class: 'btn btn-dark-blue' %>
+      <%= link_to 'Saiba mais sobre o Gestor de Canais', channels_path, class: 'btn btn-dark-blue' %>
     </div>
     <div class="home-products-items text-center pb-5 mb-4">
       <span class="dark-purple tag tag-yellow">Aumente as vendas diretas e lucre mais</span>
@@ -101,7 +104,7 @@
 
         </div>
       </div>
-      <%= link_to 'Saiba mais sobre o Motor de Reservas', "#", class: 'btn btn-dark-blue' %>
+      <%= link_to 'Saiba mais sobre o Motor de Reservas', engine_path, class: 'btn btn-dark-blue' %>
     </div>
   </div>
 </section>
@@ -562,7 +565,7 @@
       <h3 class="dark-purple mb-4">Assine nossa Newsletter</h3>
       <span class="dark-purple mb-2">Faça como 2.000 hoteleiros que acreditam na educação para crescerem suas hospedagens.<br /> Inscreva-se para receber, semanalmente, conteúdo gratuito no seu e-mail.</span>
     
-      <%= form_for '', url: "#", html: {id: 'newsletter-form',class: "mb-2"}, data: {'parsley-validate' => true} do |f|%>
+      <%= form_for '', url: sign_up_newsletters_path, html: {id: 'newsletter-form',class: "mb-2"}, data: {'parsley-validate' => true} do |f|%>
         <%= f.hidden_field 'recaptcha_token', data: { action: 'sign_up_newsletters' } %>
         <div class="form-row mt-4 pt-3 d-flex align-items-center justify-content-center">
           <div class="col-12 col-lg-6 mt-3">
@@ -581,3 +584,4 @@
     </div>
   </div>
 </section>
+

@@ -1,0 +1,48 @@
+const modules = [
+  {
+    id: 1,
+    title: "Módulo Plus",
+    price: 39.9,
+    features: [
+      "Indicadores e métricas de gestão",
+      "Tarifário avançado",
+      "Reservas em grupo",
+      "Permissão de usuários personalizados",
+      "Controle manual dos canais de vendas",
+      "Gestão dos pontos de venda",
+      "Gestão de day use",
+      "Gestão de empresas",
+      "Categorização de produtos e serviços*",
+      "Produtos e serviços por ponto de venda",
+      "Controle de estoque",
+      "Agenda de tarefas*",
+      "Lembretes de limpeza*",
+      "Lembretes de hóspede*",
+      "Envio de vouchers (150 e-mails/mês)",
+      "Histórico de atividades dos últimos 30 dias",
+      "Relatório de ocupação",
+      "Relatório de vendas",
+      "Relatório de consumo",
+      "Exportação de dados",
+    ],
+  },
+  {
+    id: 2,
+    title: "Módulo Financeiro",
+    price: 29.9,
+    features: [
+      "Gestão de receitas e despesas",
+      "Gestão de caixas por usuários",
+      "Gestão de contas bancárias",
+      "Receitas e despesas recorrentes",
+      "Categorias e subcategorias de transações",
+      "Relatório financeiro",
+      "Conciliação bancária*",
+      "Controle de comissão por funcionário*",
+      "Controle de comissão por canal*",
+      "DRE*",
+    ],
+  },
+];
+
+export default modules;

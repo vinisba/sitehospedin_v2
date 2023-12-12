@@ -1,0 +1,308 @@
+<%= title "Materiais educativos para Hotéis e Pousadas - Hospedin" %>
+<%= meta_description "eBooks, planilhas, infográficos, vídeos e outros materiais para ajudar sua pousada a chegar no próximo nível" %>
+<%= navbar_color('bg-red') %>
+
+<section class="bg-red mask-red library-banner">
+  <div class="container text-center text-lg-left">
+    <h1 class="white mb-2 h1">Materiais Educativos</h1>
+    <p class="white">eBooks, planilhas, infográficos, vídeos e outros materiais para ajudar sua pousada a chegar no próximo nível.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="white mb-2">Destaques</h2>
+    <div class="row">
+      <div class="col-12 col-lg-7 col-xl-8">
+        <%= link_to 'https://calculadora.hospedin.com/?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'card mb-3 rounded', target: '_blank' do %>
+          <%= image_tag 'libraries/videos/destaque-site-calculadora.jpg', class: 'thumbnail rounded w-100', title: 'Calculadora de Diárias' %>
+        <% end %>
+      </div>
+      <div class="col-12 col-lg-5 col-xl-4 order-lg-first">
+        <div class="row">
+
+          <div class="col-12">
+            <div class="book-card mb-3 rounded">
+              <div class="thumbnail">
+                <%= image_tag 'libraries/documents/destaque-ficha-nacional-de-registro.jpg', class: 'rounded-left', title: 'FNRH - Ficha Nacional de Registro de Hóspedes' %>
+              </div>
+              <div class="book-description dark-purple">
+                <p>FNRH - Ficha Nacional de Registro de Hóspedes</p>
+                <%= link_to 'Ver material', 'https://educativos.hospedin.com/fnrh-ficha-nacional-de-registro-de-hospedes?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'btn btn-sm btn-yellow', target: '_blank' %>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="book-card mb-3 rounded">
+              <div class="thumbnail">
+                <%= image_tag 'libraries/ebooks/como-calcular-a-diaria-do seu-hotel-ou-pousada.jpg', class: 'rounded-left', title: 'eBook: 10 super dicas para aumentar as reservas online' %>
+              </div>
+              <div class="book-description dark-purple">
+                <p>eBook - Como calcular a diária da sua pousada ou hotel</p>
+                <%= link_to 'Ver eBook', 'https://educativos.hospedin.com/como-calcular-diaria-de-hotel?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'btn btn-sm btn-yellow', target: '_blank' %>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="book-card mb-3 rounded">
+              <div class="thumbnail">
+                <%= image_tag 'libraries/documents/destaque-planilha-para-controle.jpg', class: 'rounded-left', title: 'Planilha para Controle de Hotel' %>
+              </div>
+              <div class="book-description dark-purple">
+                <p>Planilha para Controle de Hotel</p>
+                <%= link_to 'Ver planilha', 'https://educativos.hospedin.com/planilha-para-controle-de-hotel-gratis?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'btn btn-sm btn-yellow', target: '_blank' %>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y">
+  <div class="container">
+    <h3 class="dark-purple mb-2 mb-lg-3">
+      eBooks
+      <div class="books-nav carousel-nav nav-red float-right">
+        <span class="nav-prev disabled"><i data-feather="arrow-left"></i></span>
+        <span class="nav-next"><i data-feather="arrow-right"></i></span>
+      </div>
+    </h3>
+     <div class="books-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+       <%= link_to 'https://educativos.hospedin.com/ebook-guia-completo-de-gestao-de-pessoas-na-hotelaria?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+         <%= image_tag 'libraries/ebooks/guia-completo-de-gestao-de-pessoas-na-hotelaria.jpg', class: 'img-fluid rounded', title: 'Guia completo de Gestão de Pessoas na hotelaria', alt: 'Guia completo de Gestão de Pessoas na hotelaria' %>
+       <% end %>
+       <%= link_to 'https://educativos.hospedin.com/ebook-guia-5-estrelas-do-encantamento-do-hospede?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+         <%= image_tag 'libraries/ebooks/guia-5-estrelas.jpg', class: 'img-fluid rounded', title: 'eBook guia 5 estrelas do encantamento do hóspede', alt: 'Guia 5 estrelas do encantamento do hóspede - Ebook Hospedin' %>
+       <% end %>
+       <%= link_to 'https://educativos.hospedin.com/ebook-10-dicas-para-destacar-sua-pousada?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+         <%= image_tag 'libraries/ebooks/banner-site-10dicas.jpg', class: 'img-fluid rounded', title: 'eBook 10 dicas para se destacar entre a concorrência', alt: '10 dicas para se destacar entre a concorrência - Ebook Hospedin' %>
+       <% end %>
+       <%= link_to 'https://educativos.hospedin.com/manual-de-procedimento-operacional-padrao-recepcao?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+         <%= image_tag 'libraries/ebooks/manual-de-procedimento-operacional-padrao-recepcao.jpg', class: 'img-fluid rounded', title: 'eBook Manual de Procedimento Operacional Padrão (POP) para Recepção de Hotéis', alt: 'Manual de Procedimento Operacional Padrão (POP) para Recepção de Hotéis - Ebook Hospedin' %>
+       <% end %> 
+       <%= link_to 'https://educativos.hospedin.com/manual-de-atendimento-ao-hospede?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+         <%= image_tag 'libraries/ebooks/manual-atendimento-excelencia-hospede.png', class: 'img-fluid rounded', title: 'eBook Manual do Atendimento de Excelência do Hóspede', alt: 'Manual do Atendimento de Excelência do Hóspede - Ebook Hospedin' %>
+       <% end %>
+       <%= link_to 'https://educativos.hospedin.com/guia-completo-da-hotelaria-cargos-e-funcoes?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/guia-completo-da-hotelaria-cargos-e-funcoes.jpg', class: 'img-fluid rounded', title: 'eBook Guia Completo da Hotelaria: Cargos e Funções', alt: 'O Guia Completo da Hotelaria: Cargos e Funções - Ebook Hospedin' %>
+      <% end %>
+      </div>
+      <div class="books-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'https://educativos.hospedin.com/planejamento-estrategico-hoteleiro?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/planejamento-estrategico-hoteleiro.jpg', class: 'img-fluid rounded', title: 'eBook Guia Completo da Hotelaria: Cargos e Funções', alt: 'O Guia Completo da Hotelaria: Cargos e Funções - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/guia-completo-como-informatizar-hotel?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/guia-completo-como-informatizar-hotel.jpg', class: 'img-fluid rounded', title: 'eBook Como Informatizar o seu Hotel', alt: 'O Guia Completo de como Informatizar o seu Hotel - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/como-administrar-pousada?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/como-administrar-uma-pousada.jpg', class: 'img-fluid rounded', title: 'eBook Como Administrar uma Pousada', alt: 'Como Administrar uma Pousada - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/como-calcular-diaria-de-hotel?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/como-calcular-a-diaria-do seu-hotel-ou-pousada.jpg', class: 'img-fluid rounded', title: 'eBook Como calcular a diária do seu hotel ou pousada', alt: 'Como calcular a diária do seu hotel ou pousada - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/marketing-digital-para-hoteleiros?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/marketing-digital-hoteleiro.jpg', class: 'img-fluid rounded', title: 'eBook Marketing Digital para Hoteleiros', alt: 'Marketing Digital para Hoteleiros: da estratégia à prática - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/como-montar-uma-pousada?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/como-montar-pousada.jpg', class: 'img-fluid rounded', title: 'eBook Como montar uma Pousada', alt: 'Como montar uma pousada - Ebook Hospedin' %>
+      <% end %>
+      </div>
+      <div class="books-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'https://educativos.hospedin.com/gestao-financeira-na-hotelaria?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/guia-da-gestao-financeira-na-hotelaria.jpg', class: 'img-fluid rounded', title: 'eBook Guia da Gestão Financeira na Hotelaria', alt: 'Guia da gestão financeira na Hotelaria - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/10-super-dicas-para-aumentar-reservas-online?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/10-super-dicas-para-aumentar-as-reservas-online.jpg', class: 'img-fluid rounded', title: 'eBook 10 Super Dicas para aumentar as reservas online', alt: '10 super dicas para aumentar as reservas online - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/manual-da-camareira-bem-sucedida?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/manual-da-camareira-bem-sucedida.jpg', class: 'img-fluid rounded', title: 'eBook Manual da Camareira Bem-sucedida', alt: 'Manual da Camareira Bem-sucedida - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/plano-de-acao-para-contornar-baixa-temporada?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+       <%= image_tag 'libraries/ebooks/plano-de-acao-para-contornar-a-baixa-temporada-na-hotelaria.jpg', class: 'img-fluid rounded', title: 'eBook Plano de ação para contornar a baixa temporada na hotelaria', alt: 'Plano de ação para contornar a baixa temporada na hotelaria - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/guia-do-recepcionista-de-hotel?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+       <%= image_tag 'libraries/ebooks/guia-do-recepcionista-de-hotel.jpg', class: 'img-fluid rounded', title: 'eBook O Guia do Recepcionista de Hotel', alt: 'O Guia do Recepcionista de Hotel - Ebook Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/guia-definitivo-da-gestao-hoteleira?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/o-guia-definitivo-da-gestao-hoteleira.jpg', class: 'img-fluid rounded', title: 'eBook O Guia definitivo da Gestão Hoteleira', alt: 'O Guia definitivo da Gestão Hoteleira - Ebook Hospedin' %>
+      <% end %>
+   </div>
+      <div class="books-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'https://educativos.hospedin.com/ebook-vendas-adicionais?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'libraries/ebooks/vendas-adicionais.jpg', class: 'img-fluid rounded', title: 'eBook Vendas adicionais: uma estratégia para aumentar a lucratividade do seu hotel', alt: 'Vendas adicionais: uma estratégia para aumentar a lucratividade do seu hotel - Ebook Hospedin' %>
+      <% end %>
+   </div>
+  </div>
+</section>
+
+<section class="padding-y pt-0">
+  <div class="container">
+    <h3 class="dark-purple mb-2 mb-lg-3">
+      Planilhas e Documentos
+      <div class="documents-nav carousel-nav nav-red float-right">
+        <span class="nav-prev disabled"><i data-feather="arrow-left"></i></span>
+        <span class="nav-next"><i data-feather="arrow-right"></i></span>
+      </div>
+    </h3>
+    <div class="documents-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'https://educativos.hospedin.com/voucher-de-hotel?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/voucher-de-hotel.jpg', class: 'img-fluid rounded', title: 'Voucher de hotel', alt: 'Voucher de hotel' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/planilha-planejamento-orcamentario?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/banner-site-planilhaorcamentaria.jpg', class: 'img-fluid rounded', title: 'Planilha para Planejamento Orçamentário', alt: 'Planilha para Planejamento Orçamentário' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/planilha-precificacao-diarias?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/banner-precificacao.jpg', class: 'img-fluid rounded', title: 'Planilha grátis para precificação de diária', alt: 'Planilha grátis para precificação de diária' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/kit-maos-a-obra-do-marketing-hoteleiro?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/banner-site-Kit-Mãos-a-obra-do-Marketing-sem-logo.jpg', class: 'img-fluid rounded', title: 'Kit mãos a obra do marketing hoteleiro', alt: 'Kit mãos a obra do marketing hoteleiro' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/fnrh-ficha-nacional-de-registro-de-hospedes?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/fnrh-ficha-nacional-de-registro-de-hospedes.png', class: 'img-fluid rounded', title: 'FNRH - Ficha Nacional de Registro de Hóspedes', alt: 'FNRH - Ficha nacional de registro de Hóspedes | Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/formulario-de-pesquisa-de-satisfacao-hotel?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/pesquisa-satisfacao-hotel.jpg', class: 'img-fluid rounded', title: 'Formulário de pesquisa de satisfação de hotel', alt: 'Formulário de pesquisa de satisfação de hotel | Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/planilha-para-controle-de-hotel-gratis?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/planilha-controle-hotel.png', class: 'img-fluid rounded', title: 'Planilha para Controle de Hotel', alt: 'Planilha para controle de hotel | Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/plano-de-negocio-para-pousada?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/plano-negocio-pousada.jpg', class: 'img-fluid rounded', title: 'Plano de Negócio para Pousada', alt: 'Plano de negócio para pousada | Hospedin' %>
+      <% end %>
+    </div>
+    <div class="documents-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'https://educativos.hospedin.com/cartilha-protocolos-de-prevencao-covid19?utm_source=pagina&utm_medium=materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/cartilha-de-protocolos.jpg', class: 'img-fluid rounded', title: 'Cartilhas de protocolos do Covid-19', alt: 'Cartilhas de protocolos do Covid-19 | Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/kit-manutencao-hoteleira-na-pratica?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/kit-manutencao-hoteleira-na-pratica.jpg', class: 'img-fluid rounded', title: 'Kit manutenção hoteleira na prática', alt: 'Kit manutenção hoteleira na prática | Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/combo-governanca-eficiente?utm_source=site&utm_medium=pagina-materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/combo-governaca-eficiente.jpg', class: 'img-fluid rounded', title: 'Combo Governança Eficiente', alt: 'Combo Governança Eficiente | Hospedin' %>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/kit-de-seguranca-do-hospede?utm_source=site&utm_medium=materiais-educativos', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'libraries/documents/kit-de-seguranca-do-hospede.jpg', class: 'img-fluid rounded', title: 'Kit de Segurança do Hóspede', alt: 'Kit de Segurança do Hóspede | Hospedin' %>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y pt-0">
+  <div class="container">
+    <h3 class="dark-purple mb-2 mb-lg-3">
+      Vídeos
+      <div class="videos-nav carousel-nav nav-red float-right">
+        <span class="nav-prev disabled"><i data-feather="arrow-left"></i></span>
+        <span class="nav-next"><i data-feather="arrow-right"></i></span>
+      </div>
+    </h3>
+
+    <div class="videos-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">    
+      <%= link_to 'https://calculadora.hospedin.com/?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'video-card video-card__nobg hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/calculadora-de-diárias-sem-logo.jpg', class: 'thumbnail rounded', title: 'Calculadora de Diárias', alt: 'Calculadora de Diárias' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/inscricao-mini-curso-de-atendimento-whatsapp?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'video-card video-card__nobg hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/atendimento-whats.jpg', class: 'thumbnail rounded', title: 'Mini Curso - Indicadores Hoteleiros que você precisa conhecer', alt: 'Mini Curso de Atendimento pelo WhatsApp' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/inscricao-mini-curso-de-producao-de-conteudo-hoteleiro?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'video-card video-card__nobg hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/banner-producaodeconteudo.jpg', class: 'thumbnail rounded', title: 'Mini Curso - Indicadores Hoteleiros que você precisa conhecer', alt: 'Mini Curso Produção de Conteúdo Hoteleiro' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/inscricao-mini-curso-indicadores-hoteleiros?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'video-card video-card__nobg hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/mini-curso-indicadores-hoteleiros.jpg', class: 'thumbnail rounded', title: 'Mini Curso - Indicadores Hoteleiros que você precisa conhecer', alt: 'Mini Curso - Indicadores Hoteleiros que você precisa conhecer' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/inscricao-mini-curso-como-turbinar-as-redes-sociais?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'video-card video-card__nobg hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/mini-curso-como-turbinar-suas-redes-sociais.jpg', class: 'thumbnail rounded', title: 'Mini Curso - Como turbinar suas redes socias', alt: 'Mini Curso - Como turbinar suas redes socias' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+      <% end %>
+      <%= link_to 'https://educativos.hospedin.com/inscricao-mini-curso-de-precificacao-de-diarias?utm_source=site&utm_medium=pagina-materiais-educativos', class: 'video-card video-card__nobg hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/mini-curso-precificacao-de-diarias.jpg', class: 'thumbnail rounded', title: 'Mini Curso - Precificação de diárias', alt: 'Mini Curso - Precificação de diárias' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+      <% end %>
+      <%= link_to 'https://www.youtube.com/playlist?list=PLzqWKSt_KUr4auPl7YASTKZUZd_5rNKIL', class: 'video-card video-card__nobg hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/pilulas-semanais-para-saude-da-gestao-hoteleira.jpg', class: 'thumbnail rounded', title: 'Pílulas semanais para a saúde da sua gestão Hoteleira - Vídeos Hospedin', alt: 'Pílulas semanais para a saúde da sua gestão Hoteleira - Vídeos Hospedin' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="videos-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'https://youtu.be/wy3DMor9ei4', class: 'video-card hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/3-dicas-para-sua-pousada-aparecer-mais-google.jpg', class: 'thumbnail rounded', alt: '3 dicas para a sua pousada aparecer mais no Google | Webinar Hospedin' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+        <span class="video-description">Webinar - 3 dicas para sua pousada aparecer mais no Google</span>
+      <% end %>
+
+      <%= link_to 'https://educativos.hospedin.com/demonstracao-hospedin-pms', class: 'video-card hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/demonstracao-hospedin.jpg', class: 'thumbnail rounded', title: 'Demonstração Hospedin PMS', alt: 'Demonstração Hospedin PMS | Webinar Hospedin' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+        <span class="video-description">Webinar - Demonstração Hospedin PMS</span>
+      <% end %>
+      <%= link_to 'https://youtu.be/ZTj-5LZtQ1k', class: 'video-card hover-zoom item rounded', target: '_blank' do %>
+        <%= image_tag 'libraries/videos/webinar-estrategias-marketing-digital-vender-mais.jpg', class: 'thumbnail rounded', alt: 'Estratégias de marketing para vender mais | Webinar Hospedin' %>
+        <div class="video-button">
+          <i data-feather="chevron-right"></i>
+        </div>
+        <span class="video-description">Webinar - Estratégias de Marketing Digital para vender MAIS!</span>
+      <% end %>
+    </div>
+
+  </div>
+</section>
+
+<%= render 'shared/newsletter_form' %>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-4 bg-light-blue">
+        <div class="card-product text-center">
+          <%= image_tag 'icons/product-icons/masked-channel.svg', class: 'img-fluid rounded mb-3', alt: 'Channel Manager - Hospedin' %>
+          <h2 class="white"><%= link_to "Channel Manager", channels_path %></h2>
+          <p class="white mx-auto">Organize as reservas do Booking, Expedia, Decolar e outros canais em um só lugar.</p>
+          <%= link_to 'Saiba mais', channels_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-dark-blue">
+        <div class="card-product text-center">
+          <%= image_tag 'icons/product-icons/masked-pms.svg', class: 'img-fluid rounded mb-3', alt: 'Sistema Hoteleiro (PMS) - Hospedin' %>
+          <h2 class="white"><%= link_to "Sistema Hoteleiro", root_path %></h2>
+          <p class="white mx-auto">Tenha total controle das suas reservas, acomodações e hóspedes.</p>
+          <%= link_to 'Saiba mais', root_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-yellow">
+        <div class="card-product text-center">
+          <%= image_tag 'icons/product-icons/masked-reservation.svg', class: 'img-fluid rounded mb-3', alt: 'Motor de Reservas - Hospedin' %>
+          <h2 class="dark-purple"><%= link_to "Motor de Reservas", engine_path %></h2>
+          <p class="purple mx-auto">Receba reservas diretamente do seu site e reduza as comissões dos canais de venda.</p>
+          <%= link_to 'Saiba mais', engine_path, class: 'btn btn-white-hover-alt btn-white btn-shadow' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

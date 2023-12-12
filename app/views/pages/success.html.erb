@@ -1,0 +1,17 @@
+<%= title "Hospedin - Teste enviado com sucesso" %>
+<%= navbar_option('bg-purple color-fixed') %>
+
+<section class="padding-y-fixed success-page">
+  <div class="container">
+    <%= image_tag 'icons/success-illustration.svg', class: 'mb-5 mx-auto', alt: 'Ícone sucesso' %>
+    <% if params["type"] == "pending" %>
+      <h2 class="dark-purple mb-5 text-center">Parabéns! Recebemos a sua solicitação ;)</h2>
+      <p class="purple mb-3 text-center">Avaliaremos as informações e em breve enviaremos o acesso.</p>
+      <p class="purple text-center">Vale lembrar que nosso atendimento é de segunda à sexta-feira das <strong>09h00 às 18h00</strong>, logo, enviaremos o acesso neste horário.</p>
+    <% else %>
+      <h2 class="dark-purple mb-5 text-center">Parabéns! Sua solicitação foi aprovada ;)</h2>
+      <p class="purple mb-3 text-center">Em breve enviaremos os dados de acesso.</p>
+      <p class="purple text-center">Se depois de alguns minutos os dados de acesso não estiverem na caixa de entrada do seu email, por favor <span class="text-danger">verifique se estão caixa de spam.</span></p>
+    <% end %>
+  </div>
+</section>

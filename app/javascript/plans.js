@@ -1,0 +1,95 @@
+const plans = [
+  {
+    title: "Nenhum selecionado",
+    price: 0,
+    monthly: 0,
+    yearly_price: 0,
+    places: 0,
+  },
+  {
+    title: "Jade",
+    price: 79.9,
+    monthly: 59.9,
+    yearly_price: 646.92,
+    places: 10,
+  },
+  {
+    title: "Rubi",
+    price: 104.9,
+    monthly: 79.9,
+    yearly_price: 862.92,
+    places: 20,
+  },
+  {
+    title: "Safira",
+    price: 129.9,
+    monthly: 99.9,
+    yearly_price: 1078.92,
+    places: 30,
+  },
+  {
+    title: "Esmeralda",
+    price: 179.9,
+    monthly: 139.9,
+    yearly_price: 1510.92,
+    places: 50,
+  },
+  {
+    title: "Pérola",
+    price: 249.9,
+    monthly: 199.9,
+    yearly_price: 2158.92,
+    places: 80,
+  },
+  {
+    title: "Diamante",
+    price: 309.9,
+    monthly: 239.9,
+    yearly_price: 2590.92,
+    places: 100,
+  },
+  {
+    title: "Opala",
+    price: 359.9,
+    monthly: 279.9,
+    yearly_price: 3022.92,
+    places: 130,
+  },
+  {
+    title: "Turquesa",
+    price: 409.9,
+    monthly: 319.9,
+    yearly_price: 3454.92,
+    places: 150,
+  },
+  {
+    title: "Topázio",
+    price: 499.9,
+    monthly: 399.9,
+    yearly_price: 4318.92,
+    places: 200,
+  },
+];
+
+const features = [
+  "Mapa de reservas",
+  "Gestão das UHs",
+  "Gestão de reservas",
+  "Gestão de hóspedes e acompanhantes",
+  "Gestão de recebimentos",
+  "Gestão de produtos e serviços",
+  "Gestão dos usuários",
+  "Tarifário básico",
+  "Permissões de usuários por departamentos",
+  "Categorização das UHs",
+  "Ficha de registro (FNRH)",
+  "Voucher e recibos",
+  "Histórico de estadias dos hóspedes",
+  "Conta bancária única",
+  "Histórico de atividades dos últimos 10 dias",
+  "Preenchimento automático do endereço",
+  "Importação de dados",
+];
+
+export default plans;
+export { features };

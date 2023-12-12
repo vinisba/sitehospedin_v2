@@ -1,0 +1,303 @@
+<%= title "Channel Manager para Hotéis e Pousadas - Hospedin" %>
+<%= meta_description "Gerencie todas as reservas do Booking, Expedia, Decolar e vários outros canais no Hospedin" %>
+<%= navbar_color('bg-light-blue') %>
+
+<section class="bg-light-blue mask-light-blue banner channel-banner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6 text-center text-lg-left">
+        <h1 class="white mt-2 mb-3">Channel Manager</h1>
+        <p class="white">Gerencie todas as reservas do Booking, Expedia, Decolar e vários outros canais no Hospedin</p>
+        <%= link_to 'Fale com um consultor',  'https://educativos.hospedin.com/fale-com-um-consultor', target: '_blank', class: 'btn btn-lg btn-yellow mb-5' %>
+      </div>
+      <div class="col-12 col-lg-6 text-center">
+        <%= image_tag 'banners/channel-manager.png', class: 'img-fluid', alt: 'Channel Manager Hospedin: Faça a gestão das reservas realizadas por outros canais no Hospedin' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y-1" id="vantagens">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-12 mb-5">
+        <h2 class="dark-purple mb-2 mb-lg-4 text-center h3">VANTAGENS</h2>
+      </div>
+      <div class="col-12 col-lg-12 benefits">
+        <div class="row">
+          <div class="col-12 col-lg-4 benefit">
+            <h4 class="dark-purple">AUMENTE SUAS VENDAS</h4>
+            <p class="purple">Anuncie seu hotel em vários locais e conquiste muito mais reservas através destes novos canais de venda.</p>
+          </div>
+          <div class="col-12 col-lg-4 benefit">
+            <h4 class="dark-purple">MINIMIZE O RISCO DE OVERBOOKING</h4>
+            <p class="purple">Com a sincronização automática entre Hospedin e os canais de venda você diminui drasticamente a possibilidade de ter overbooking.</p>
+          </div>
+          <div class="col-12 col-lg-4 benefit">
+            <h4 class="dark-purple">MAIS TEMPO E MENOS ESFORÇO</h4>
+            <p class="purple">Reduza o tempo que você gasta gerenciando a disponibilidade de quartos em cada canal de venda.</p>
+          </div>
+          <div class="col-12 col-lg-4 benefit">
+            <h4 class="dark-purple">CENTRALIZE A GESTÃO</h4>
+            <p class="purple">Você receberá todas as reservas dentro do Hospedin facilitando muito a organização do seu dia a dia.</p>
+          </div>
+          <div class="col-12 col-lg-4 benefit">
+            <h4 class="dark-purple">AUTOMATIZE SEU TARIFÁRIO</h4>
+            <p class="purple">Gerencie seu tarifário e restrições no Channel Manager e distribua em todos os canais de venda de forma automática.</p>
+          </div>
+          <div class="col-12 col-lg-4 benefit">
+            <h4 class="dark-purple">GARANTIA DE PARIDADE TARIFÁRIA</h4>
+            <p class="purple">Os preços são distribuídos de forma igual para seus anúncios evitando que seu hotel seja penalizado pelos canais venda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <%= link_to 'Fale com um consultor',  'https://educativos.hospedin.com/fale-com-um-consultor', target: '_blank', class: 'btn btn-lg btn-yellow' %>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y-1 bg-gray-blue">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6 col-lg-6 text-center text-lg-left">
+        <h2 class="dark-purple mb-3 mb-lg-4 h3">PRINCIPAIS CANAIS DE VENDAS</h2>
+        <%= link_to 'Ver todos os canais de vendas', "https://doc.clickup.com/451738/p/h/dt4u-132523/975aa2f3e814fb3", target: '_blank', class: 'btn btn-md btn-dark-blue' %>
+      </div>
+      <div class="col-6 col-lg-6 text-center text-lg-left">
+        <div class="row align-items-center pt-2">
+          <div class="col-lg-4 col-md-6 mb-5 p-0 ">
+            <%= link_to 'https://www.booking.com/index.pt-br.html?label=gen173rf-1BCAEoggI46AdIM1gDaCCIAQGYAS24ARfIAQzYAQHoAQGIAgGiAg9kb2MuY2xpY2t1cC5jb22oAgO4Aq6xrZ0GwAIB0gIkOWU0OWVlNWYtN2NjNC00MjlkLTlkM2MtMTI5NTI4NmI5ZmNi2AIF4AIB&sid=44fc0b1c3728f7870414947303e494f5&keep_landing=1&sb_price_type=total&', target: '_blank' do %>
+              <%= image_tag 'sales-channels/booking.png', class: 'img-fluid', alt: 'Canal de Venda: Booking.com' %>
+            <% end %>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5 p-0 ">
+            <%= link_to 'https://www.airbnb.com.br/?_set_bev_on_new_domain=1671105488_MGJlOTJkMWViMzYx', target: '_blank' do %>
+              <%= image_tag 'sales-channels/airbnb.png', class: 'img-fluid', alt: 'Canal de Venda: Airbnb' %>
+            <% end %>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5 p-0 ">
+            <%= link_to 'https://www.decolar.com/', target: '_blank' do %>
+              <%= image_tag 'sales-channels/decolar.png', class: 'img-fluid', alt: 'Canal de Venda: Decolar' %>
+            <% end %>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5 p-0 ">
+            <%= link_to 'https://www.expedia.com/', target: '_blank' do %>
+              <%= image_tag 'sales-channels/expedia.png', class: 'img-fluid', alt: 'Canal de Venda: Expedia' %>
+            <% end %>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5 p-0 ">
+            <%= link_to 'https://www.tripadvisor.com/', target: '_blank' do %>
+              <%= image_tag 'sales-channels/tripadvisor.png', class: 'img-fluid', alt: 'Canal de Venda: Tripadvisor' %>
+            <% end %>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5 p-0">
+            <%= link_to 'https://www.agoda.com/', target: '_blank' do %>
+              <%= image_tag 'sales-channels/agoda.png', class: 'img-fluid', alt: 'Canal de Venda: Agoda' %>
+            <% end %>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5 p-0">
+            <%= link_to 'https://www.hostelworld.com/', target: '_blank' do %>
+              <%= image_tag 'sales-channels/hostelworld.png', class: 'img-fluid', alt: 'Canal de Venda: Hostelworld' %>
+            <% end %>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5 p-0">
+            <%= link_to 'https://www.hrs.com/', target: '_blank' do %>
+              <%= image_tag 'sales-channels/hrs.png', class: 'img-fluid', alt: 'Canal de Venda: HRS' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% if 1 == 2 %>
+<section class="bg-light-blue padding-y-1">
+  <div class="container">
+    <h2 class="white text-center mb-3">Funcionalidades</h2>
+    <span class="d-block text-center white mb-5">São diversas funcionalidades para facilitar suas tarefas. </span>
+    <div class="row size-default text-left text-md-center">
+      <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-3">
+        <div class="functionality-card white bg-green-blue rounded p-4">
+          <i class="icon-sm mb-0 mb-md-4 mr-2 mr-md-0" data-feather="dollar-sign"></i>
+          <span class="d-inline-block d-md-block align-middle">Flexibilidade de tarifário</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-3">
+        <div class="functionality-card white bg-green-blue rounded p-4">
+          <i class="icon-sm mb-0 mb-md-4 mr-2 mr-md-0" data-feather="grid"></i>
+          <span class="d-inline-block d-md-block align-middle">Número de Canais</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-3">
+        <div class="functionality-card white bg-green-blue rounded p-4">
+          <i class="icon-sm mb-0 mb-md-4 mr-2 mr-md-0" data-feather="headphones"></i>
+          <span class="d-inline-block d-md-block align-middle">Help Desk</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-3">
+        <div class="functionality-card white bg-green-blue rounded p-4">
+          <i class="icon-sm mb-0 mb-md-4 mr-2 mr-md-0" data-feather="user-check"></i>
+          <span class="d-inline-block d-md-block align-middle">Relatórios Guest Intelligence</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-3">
+        <div class="functionality-card white bg-green-blue rounded p-4">
+          <i class="icon-sm mb-0 mb-md-4 mr-2 mr-md-0" data-feather="key"></i>
+          <span class="d-inline-block d-md-block align-middle">Acesso multi-utilizador</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-3">
+        <div class="functionality-card white bg-green-blue rounded p-4">
+          <i class="icon-sm mb-0 mb-md-4 mr-2 mr-md-0" data-feather="home"></i>
+          <span class="d-inline-block d-md-block align-middle">Reservas centralizadas</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-3">
+        <div class="functionality-card white bg-green-blue rounded p-4">
+          <i class="icon-sm mb-0 mb-md-4 mr-2 mr-md-0" data-feather="dollar-sign"></i>
+          <span class="d-inline-block d-md-block align-middle">Preço por parceiro</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-3">
+        <div class="functionality-card white bg-green-blue rounded p-4">
+          <i class="icon-sm mb-0 mb-md-4 mr-2 mr-md-0" data-feather="dollar-sign"></i>
+          <span class="d-inline-block d-md-block align-middle">Todos os preços</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+
+<section class="padding-y-1">
+  <div class="container">
+    <h2 class="dark-purple mb-3 text-center h3">COMO FUNCIONA</h2>
+    <p class="purple text-center">O <strong>Channel Manager</strong> ou também conhecido como <strong>Gestor de Canais</strong>, é uma solução que possibilita centralizar a gestão das reservas realizadas em várias OTAS e canais de reservas em um só lugar.</p>
+
+    <div class="row align-items-center padding-y">
+      <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+        <%= image_tag 'channel-steps/channel-manager-para-software-hotel-passo-1.jpg', class: 'img-fluid', alt: 'Channel Manager para Software de Hotel - Passo 1' %>
+      </div>
+      <div class="col-12 col-lg-6 pl-lg-5 text-center text-lg-left">
+        <h3 class="dark-purple mb-1">1. Fale com nossos consultores</h3>
+        <p class="purple">O primeiro passo é solicitar o contato de um consultor Hospedin. Entraremos em contato com você visando tirar todas as dúvidas do <b>Channel Manager</b> e como ele pode facilitar o seu dia a dia.</p>
+        <%= link_to 'Fale com um consultor',  'https://educativos.hospedin.com/fale-com-um-consultor', target: '_blank', class: 'btn btn-yellow' %>
+      </div>
+    </div>
+
+    <div class="row align-items-center padding-y">
+      <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0 order-lg-last">
+        <%= image_tag 'channel-steps/channel-manager-para-software-hotel-passo-2.jpg', class: 'img-fluid', alt: 'Channel Manager para Software de Hotel - Passo 2' %>
+      </div>
+      <div class="col-12 col-lg-6 pl-lg-5 text-center text-lg-left">
+        <h3 class="dark-purple mb-1">2. Implantação e Treinamento</h3>
+        <p class="purple">Uma vez adquirido o <b>Channel Manager</b>, nossa equipe de implantação fará a configuração com os canais de vendas e dará o treinamento para você e sua equipe.</p>
+      </div>
+    </div>
+    <div class="row align-items-center padding-y pb-0">
+      <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+        <%= image_tag 'channel-steps/channel-manager-para-software-hotel-passo-3.jpg', class: 'img-fluid', alt: 'Channel Manager para Software de Hotel - Passo 3' %>
+      </div>
+      <div class="col-12 col-lg-6 pl-lg-5 text-center text-lg-left">
+        <h3 class="dark-purple mb-1">3. Sincronização com os canais</h3>
+        <p class="purple">Com a nossa integração você passará a receber todas as reservas do Booking, Expedia, Decolar e várias outras OTAs no <b>Channel Manager</b> ou dentro do PMS Hospedin. Como também terá a atualização da disponibilidade do hotel em todas estas OTAs automaticamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y bg-gray-blue">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-4">
+        <h3 class="dark-purple mb-2 mb-lg-5 h3">Perguntas Frequentes</h3>
+        <p class="purple mb-2 mb-lg-5">Tire todas as suas dúvidas a respeito do <strong>Channel Manager</strong>.</p>
+        <button class="d-none d-lg-block btn btn-dark-blue" onclick="Intercom('showNewMessage');">Fale conosco</button>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="accordion faq-accordion">
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-1">
+              O Channel Manager substitui meu sistema de gestão?
+            </a>
+            <div class="collapse purple" id="faq-1">
+              <p>
+                Não. O <b>Channel Manager</b> vai centralizar e distribuir suas disponibilidades e tarifas enviando suas reservas automaticamente para o mapa de reservas do seu sistema de gestão. Já seu sistema de gestão (PMS) é fundamental para gerenciar essas reservas no mapa, ter o domínio do cadastro de seus hóspedes, gerenciar consumos, check-in, check-out, como também organizar a parte financeira do estabelecimento.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-2">
+              Eu posso ter um Channel Manager que não tem integração com meu PMS?
+            </a>
+            <div class="collapse purple" id="faq-2">
+              <p>
+                Sim, porém você terá que inserir suas reservas vindas dos canais online manualmente, bem como controlar as disponibilidades manualmente no seu <b>Gestor de Canais</b>, pois ele não terá sincronização com seu mapa de reservas.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-3">
+              O Channel Manger faz a gestão das reservas vindas do meu site também?
+            </a>
+            <div class="collapse purple" id="faq-3">
+              <p>
+                Não, para isso você precisará contratar um motor de reservas, para que essas reservas sejam enviadas automaticamente para seu mapa.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-4">
+              Com quais canais de vendas online eu posso conectar ao Channel Manager?
+            </a>
+            <div class="collapse purple" id="faq-4">
+              <p>
+                Você pode visualizar a lista completa com todos os canas de venda que oferecemos integração <a href="https://doc.clickup.com/451738/p/h/dt4u-132523/975aa2f3e814fb3" target="_blank">clicando aqui</a>.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-5">
+              O Channel Manager vai eliminar definitivamente meus overbookings?
+            </a>
+            <div class="collapse purple" id="faq-5">
+              <p>
+                Não, ele vai reduzir em 99% a chance de <b>Overbooking</b>, mas como tratam-se de sistemas com comunicação online, ainda há um risco pequeno, muito menor que se gerenciado manualmente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-block d-lg-none text-center mt-5">
+      <span class="dark-purple d-block mb-3 font-weight-bold small">Ainda ficou alguma dúvida?</span>
+      <button class="btn btn-dark-blue" onclick="Intercom('showNewMessage');">Entre em contato</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-6 bg-dark-blue">
+        <div class="card-product text-center">
+          <%= image_tag 'icons/product-icons/masked-pms.svg', class: 'img-fluid rounded mb-3', alt: 'Sistema Hoteleiro (PMS) - Hospedin' %>
+          <h2 class="white"><%= link_to "Sistema Hoteleiro", root_path, class: 'white' %></h2>
+          <p class="white mx-auto">Tenha total controle das suas reservas, acomodações e hóspedes.</p>
+          <%= link_to 'Explorar produto', root_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 bg-yellow">
+        <div class="card-product text-center">
+          <%= image_tag 'icons/product-icons/masked-reservation.svg', class: 'img-fluid rounded mb-3', alt: 'Motor de Reservas - Hospedin' %>
+          <h2 class="dark-purple"><%= link_to "Motor de Reservas", engine_path, class: 'dark-purple' %></h2>
+          <p class="purple mx-auto">Receba reservas diretamente do seu site e reduza as comissões dos canais de venda.</p>
+          <%= link_to 'Explorar produto', engine_path, class: 'btn btn-white btn-white-hover-alt btn-shadow' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

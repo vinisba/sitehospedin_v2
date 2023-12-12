@@ -1,0 +1,97 @@
+<%= title "Kit de marketing hoteleiro - Hospedin" %>
+<%= meta_description "Kit de apoio para você começar a fazer ou aperfeiçoar o marketing digital do seu estabelecimento ainda hoje" %>
+<%= navbar_color('bg-dark-purple') %>
+<section class="bg-dark-purple mask-dark-purple banner kit-banner">
+  <div class="container">
+    <h1 class="white text-center">Kit mãos à obra do marketing hoteleiro</h1>
+    <h3 class="white text-center font-weight-normal mb-5">Um plano de ação para enfrentamento da crise</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="yellow text-uppercase">Vamos fazer acontecer!</h3>
+        <p class="white">Sabemos que este momento não está sendo fácil e tem deixado muito hoteleiro sem saber o que fazer. No entanto, não é hora de ficar parado!
+        </p>
+        <p class="white">Para ajudar a enfrentar essa crise, a Hospedin criou esse kit de apoio para você começar a fazer ou aperfeiçoar o marketing digital do seu estabelecimento ainda hoje!
+        </p>
+        <div class="text-center">
+          <%= link_to 'Baixar kit completo gratuito', 'https://drive.google.com/drive/folders/18FUtZKD-r3sArbQUuCqISUMct6G9sAYt', class: 'btn btn-lg btn-yellow mb-4 mb-lg-0', target: '_blank' %>
+        </div>
+      </div>
+      <div class="col-lg-6 book pt-lg-5">
+        <%= image_tag 'kit/book.png', alt: 'Kit mãos à obra do marketing hoteleiro' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 section-kit">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="dark-purple text-uppercase mb-4">Por que o marketing digital é seu aliado agora?</h3>
+        <ul class="dark-purple list">
+          <li>As pessoas estão em casa e continuam pesquisando e se informando sobre viagem.</li>
+          <li>Forma acessível e barata de seguir fortalecendo sua marca e se manter em evidência.</li>
+          <li>O jeito mais eficiente de manter contato com as pessoas e interagir com possíveis novos hóspedes.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y bg-gray-blue">
+  <div class="container dark-purple text-center">
+    <h2 class="text-uppercase">#Hoteleirosemação: mãos à obra</h2>
+    <p class="h4 font-weight-normal px-lg-5 mb-5">Tire seu marketing digital do papel em 4 etapas, utilizando os materiais e ferramentas disponibilizados aqui:</p>
+    <div class="row kit-items">
+      <div class="col-md-6 col-lg-3 mb-5">
+        <%= image_tag 'kit/icons/1.png', class: 'img-fluid mb-3', alt: 'Ícone Planejar' %>
+        <h3 class="text-uppercase">Planejar</h3>
+        <p class="text-left">Faça o planejamento das suas ações de marketing digital. Identifique quais são seus objetivos com tais ações a fim de que elas tragam os retornos desejados.</p>
+        <%= link_to 'Baixar', 'https://drive.google.com/drive/folders/1By005epw8Zsglv9r6G7dH0u4_dXDDCET', class: 'btn btn-yellow', target: '_blank' %>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-5">
+        <%= image_tag 'kit/icons/2.png', class: 'img-fluid mb-3', alt: 'Ícone Definir' %>
+        <h3 class="text-uppercase">Definir</h3>
+        <p class="text-left">Pense nos conteúdos e formatos com antecedência e dê sentido as ações. Salve referências e utilize nossa planilha para criar um banco de ideias.</p>
+        <%= link_to 'Baixar', 'https://drive.google.com/open?id=1MiIi1v235KBRIDEHBHA7r2yyEtIHLuV9', class: 'btn btn-yellow', target: '_blank' %>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-5">
+        <%= image_tag 'kit/icons/3.png', class: 'img-fluid mb-3', alt: 'Ícone Executar' %>
+        <h3 class="text-uppercase">Executar</h3>
+        <p class="text-left">Com este cronograma de ações fica fácil se organizar e garantir uma presença consistente e evitar a repetição de assuntos divulgados.</p>
+        <%= link_to 'Baixar', 'https://drive.google.com/open?id=1p4Nzwm6XW2A5QQD3g6WqichI7N1cgCR0', class: 'btn btn-yellow', target: '_blank' %>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-5">
+        <%= image_tag 'kit/icons/4.png', class: 'img-fluid mb-3', alt: 'Ícone Medir' %>
+        <h3 class="text-uppercase">Medir</h3>
+        <p class="text-left">Seguindo os passos anteriores você tem condições de acompanhar se a estratégia está acontecendo conforme previsto e melhorar o que for preciso.</p>
+        <%= link_to 'Baixar', 'https://drive.google.com/open?id=12pbPxN2XTl6cXCg6RUbU_qVgKJEVq16z', class: 'btn btn-yellow', target: '_blank' %>
+      </div>
+    </div>
+
+    <div class="bg-dark-purple rounded py-4 px-3 p-lg-5 mt-5">
+      <h3 class="h3 white text-center mb-4">Faça como + de 10.000 hoteleiros e receba dicas por email:</h3>
+      <%= form_for '', url: sign_up_newsletters_path, html: {id: 'newsletter-form',class: "mb-2 mb-lg-4"}, data: {'parsley-validate' => true} do |f|%>
+        <%= f.hidden_field 'recaptcha_token', data: { action: 'sign_up_newsletters' } %>
+        <div class="form-row">
+          <div class="col-12 col-lg mb-2">
+            <%= f.text_field 'name', class: 'form-control', placeholder: 'Seu nome', required: true, minlength: 5 %>
+          </div>
+          <div class="col-12 col-lg mb-2">
+            <%= f.email_field 'email', class: 'form-control', placeholder: 'Seu e-mail', required: true, data: {'parsley-type': 'email'} %>
+          </div>
+          <div class="col-12 col-lg mb-2">
+            <%= f.text_field 'company', class: 'form-control', placeholder: 'Nome do estabelecimento' %>
+          </div>
+          <div class="col-12 col-lg mb-2 text-center">
+            <button type="submit" class="btn btn-block btn-yellow">Se inscrever</button>
+          </div>
+        </div>
+      <% end %>
+      <div id="newsletter-message" class="row justify-content-center">
+      </div>
+      <span class="d-block small text-center white">Fique tranquilo. A Hospedin não enviará spam e nem compartilhará seu email com terceiros.</span>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/8bd6224c-1e27-4e2a-a9fb-529cc08eb30e-loader.js" ></script>

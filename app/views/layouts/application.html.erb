@@ -1,17 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SitehospedinV2</title>
+    <%= stylesheet_pack_tag 'application' %>
+    <title><%= yield :title %></title>
+    <meta name="description" content="<%= yield :meta_description %>">
+    <link rel="canonical" href="https://hospedin.com<%= request.path %>" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application" %>
-    <%= javascript_pack_tag "application" %>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MTKJZPN');</script>
+    
   </head>
-
   <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTKJZPN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/navbar_mobile' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
+    <%= render 'shared/cookies' %>
+    <%= javascript_pack_tag 'application', get_controller_path %>
+    <script>
+      var APP_ID = "e3b57340968ebf5a8e53375e2e14597b09bc9d2c";
+      window.intercomSettings = {app_id: APP_ID};
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/' + APP_ID;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45574873-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-45574873-1');
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeVqeMUAAAAACb81ZbXrs9Y1IjCS8NiBIA6d-Ey"></script>
+    <script>(function() { var script = document.createElement('script'); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>
+    
+    <!-- RD Station -->
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/168d707a-c93f-4fac-93e3-947db35eda81-loader.js" ></script>
   </body>
 </html>

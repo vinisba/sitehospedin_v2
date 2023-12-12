@@ -1,0 +1,28 @@
+<section class="padding-y-1 pt-0">
+  <div class="container">
+    <div class="bg-gray-blue rounded py-4 px-3 p-lg-5">
+      <h3 class="h3 dark-purple text-center mb-4">Faça como + de 10.000 hoteleiros e receba dicas por email:</h3>
+      <%= form_for '', url: sign_up_newsletters_path, html: {id: 'newsletter-form',class: "mb-2 mb-lg-4"}, data: {'parsley-validate' => true} do |f|%>
+        <%= f.hidden_field 'recaptcha_token', data: { action: 'sign_up_newsletters' } %>
+        <div class="form-row">
+          <div class="col-12 col-lg mb-2">
+            <%= f.text_field 'name', class: 'form-control', placeholder: 'Seu nome', required: true, minlength: 5 %>
+          </div>
+          <div class="col-12 col-lg mb-2">
+            <%= f.email_field 'email', class: 'form-control', placeholder: 'Seu e-mail', required: true, data: {'parsley-type': 'email'} %>
+          </div>
+          <div class="col-12 col-lg mb-2">
+            <%= f.text_field 'company', class: 'form-control', placeholder: 'Nome do estabelecimento' %>
+          </div>
+          <div class="col-12 col-lg mb-2 text-center">
+            <button type="submit" class="btn btn-block btn-yellow">Se inscrever</button>
+          </div>
+        </div>
+      <% end %>
+      <div id="newsletter-message" class="row justify-content-center">
+      </div>
+      <span class="d-block small text-center purple">Fique tranquilo. A Hospedin não enviará spam e nem compartilhará seu email com terceiros.</span>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/8bd6224c-1e27-4e2a-a9fb-529cc08eb30e-loader.js" ></script>

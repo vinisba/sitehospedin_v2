@@ -1,0 +1,222 @@
+<%= title "Sistema para gestão de pousadas, hotéis, hostels e meios de hospedagens" %>
+<%= meta_description "Tenha total controle das suas reservas, acomodações e hóspedes com o Sistema Hoteleiro Hospedin" %>
+<%= navbar_color('bg-purple') %>
+<section class="bg-purple mask-purple banner homepage-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5 text-center text-lg-left">
+        <h1 class="white">Software de Produtividade Hoteleira</h1>
+        <p class="white mx-auto mx-lg-0">Tenha total controle das suas reservas, acomodações e hóspedes com o Sistema Hoteleiro Hospedin</p>
+        <%= link_to 'Saiba mais sobre o software hoteleiro', root_path, class: 'btn btn-lg btn-yellow' %>
+      </div>
+      <div class="col-12 d-lg-none">
+        <%= image_tag 'banners/notebook-mobile.png', class: 'img-fluid mt-5', alt: 'Notebook Hospedin' %>
+      </div>
+    </div>
+    <div class="banner-preview d-none d-lg-block">
+      <%= image_tag 'banners/notebook.png', class: 'img-fluid', alt: 'Notebook Hospedin' %>
+      <span class="bullet bullet-like">
+        <i data-feather="thumbs-up"></i>
+      </span>
+      <span class="bullet bullet-money">
+        <i data-feather="dollar-sign"></i>
+      </span>
+      <span class="bullet bullet-time">
+        <i data-feather="clock"></i>
+      </span>
+      <span class="bullet bullet-calendar">
+        <i data-feather="calendar"></i>
+      </span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-4 bg-light-blue">
+        <div class="card-product text-center">
+          <%= image_tag 'product-icons/channel.png' %>
+          <h2><%= link_to 'Channel Manager', channels_path, class: 'white' %></h2>
+          <p class="white mx-auto">Organize as reservas do Booking, Expedia, Decolar e outros canais em um só lugar. (integração com parceiros)</p>
+          <%= link_to 'Saiba mais', channels_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-dark-blue">
+        <div class="card-product text-center">
+          <%= image_tag 'product-icons/hotel.png' %>
+          <h2><%= link_to 'Software Hoteleiro', root_path, class: 'white' %></h2>
+          <p class="white mx-auto">Tenha muito mais tempo, controle e organização com o primeiro sistema hoteleiro voltado para aumentar a produtividade.</p>
+          <%= link_to 'Saiba mais sobre o PMS', root_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-yellow">
+        <div class="card-product text-center">
+          <%= image_tag 'product-icons/reservation.png' %>
+          <h2><%= link_to 'Motor de Reservas', engine_path, class: 'dark-purple' %></h2>
+          <p class="purple mx-auto">Receba reservas diretamente do seu site e reduza as comissões que você paga para os canais de venda. (integração com parceiros)</p>
+          <%= link_to 'Saiba mais', engine_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="statistics padding-y">
+  <div class="container">
+    <h3 class="statistics-title dark-purple text-center text-lg-left">Até aqui já são:</h3>
+    <div class="cards-statistics">
+      <div class="card-statistics first text-center">
+        <%= image_tag 'statistics/guests.png' %>
+        <div class="card-statistics-body">
+          <span class="d-block card-statistics-title mb-2">+2.4 mil</span>
+          <span class="d-block card-statistics-subtitle">hoteleiros felizes</span>
+        </div>
+      </div>
+      <div class="card-statistics second text-center">
+        <%= image_tag 'statistics/rooms.png' %>
+        <div class="card-statistics-body">
+          <span class="d-block card-statistics-title mb-2">+256 mil</span>
+          <span class="d-block card-statistics-subtitle">UHs gerenciadas</span>
+        </div>
+      </div>
+      <div class="card-statistics third text-center">
+        <%= image_tag 'statistics/hearts.png' %>
+        <div class="card-statistics-body">
+          <span class="d-block card-statistics-title mb-2">+14 milhões</span>
+          <span class="d-block card-statistics-subtitle">reservas feitas com amor</span>
+        </div>
+      </div>
+      <div class="card-statistics fourth text-center">
+        <%= image_tag 'statistics/likes.png' %>
+        <div class="card-statistics-body">
+          <span class="d-block card-statistics-title mb-2">+10 milhões</span>
+          <span class="d-block card-statistics-subtitle">hóspedes satisfeitos</span>
+        </div>
+      </div>
+    </div>
+    <h3 class="statistics-message text-center text-lg-right dark-purple">Faça parte dessa história você também!</h3>
+  </div>
+</section>
+
+<section class="reviews padding-y-2 bg-gray-blue">
+  <div class="container">
+    <h3 class="dark-purple mb-5 text-center text-lg-left">
+      O que nossos clientes têm a dizer sobre a Hospedin
+      <div class="reviews-nav carousel-nav float-right">
+        <span class="nav-prev disabled"><i data-feather="arrow-left"></i></span>
+        <span class="nav-next"><i data-feather="arrow-right"></i></span>
+      </div>
+    </h3>
+    <div class="reviews-carousel carousel owl-carousel owl-theme">
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"Uso o programa a um ano na pousada em que trabalho e não pretendo trocar. É bastante prático e intuitivo, um ótimo investimento. Muito mais fácil de lidar do que qualquer sistema antigo ou planilha, além de fazerem melhorias periodicamente no sistema. Recomendo!"</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Amanda Araujo</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Pousada Aldeia dos Camarás - PE</span>
+      </div>
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"Utilizo o Hospedin desde janeiro de 2014 e tem nos ajudado muito a organizar e gerenciar nosso hotel. De interface simples e intuitiva, não necessita de altas horas de treinamento e seu custo-benefício é excelente. Obrigado pela força. Vida longa e próspera!"</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Bruno Peroz</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Espaço 345 Hotel - SP</span>
+      </div>
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"Estou muito satisfeito com o aplicativo e com o suporte dado pelo Hospedin. Quando comecei tinha muitas dificuldades na gestão, hospedagem e controle das receitas. Hoje estamos muito satisfeito com o resultado e com os dados obtidos de forma clara e objetiva posso melhorar a nossa gestão."</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Francisco Del Ducca Corrêa</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Pousada Recanto Indaia - SP</span>
+      </div>
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"O sistema é ótimo! Simples, intuitivo, de fácil uso. No início surgiram algumas dúvidas, mas o suporte foi super atencioso e rapidinho nos ajudou. Outra funcionalidade que gosto muito é a possibilidade de acompanhar a rotina do hotel de onde eu estiver, por ser em nuvem. Os gráficos também são ótimas ferramentas para a gestão, visuais, otimiza o acompanhamento."</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Vaniely Cirino</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Hotel Antares - PR</span>
+      </div>
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"Acabei de renovar a minha assinatura, o que seria de mim sem o Hospedin... É muito fácil de trabalhar com ele e embora não seja feito pra quem aluga por temporada (como eu) ele me serve perfeitamente. Me traz muita tranquilidade para organizar as locações e os clientes percebem que o meu negócio é bem organizado, recebo sempre elogios por isso! #Gratidao #FelicitaFlatsUbatuba"</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Junior Milani</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Felicità Flats Ubatuba - SP</span>
+      </div>
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"Fantástico. Gerenciador de custo reduzido quando comparado a outros concorrentes. Funcionalidades essenciais para gestão hoteleira. Não tinha antes e não sei como trabalhávamos sem o Hospedin! E o melhor, atualizações cada vez mais frequentes trazendo novas funcionalidades!!!"</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Mateus Ferla</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Pousada Itapeva - RS</span>
+      </div>
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"Utilizo o Hospedin a quase três anos, desde a inauguração do meu hotel em 2015 e estou muito satisfeita! É uma ferramenta prática e muito simples de usar, sem falar que tem todas as opções para gestão do seu negócio!"</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Rayanne Borges</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Borges Hotel, Imperatriz - MA</span>
+      </div>
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"Que gente legal... jovens com paciência com gente menos jovem... Tenho recebido de vcs mais que apoio técnico: carinho. bjs"</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Telma Salles</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Pousada do Bosque - SP</span>
+      </div>
+      <div class="card-review item p-4">
+        <div class="card-review-stars mb-3">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <p class="mb-4 purple text-center text-lg-left">"Já usamos o Hospedin a mais de três anos e tem sido fundamental na nossa pousada. Recomendo a todos."</p>
+        <span class="d-block dark-purple card-review-author text-center text-lg-left">Antonio Moreno</span>
+        <span class="d-block purple card-review-address text-center text-lg-left">Pousada Seu Tião - PB</span>
+      </div>
+    </div>
+  </div>
+</section>

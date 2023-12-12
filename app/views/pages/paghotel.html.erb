@@ -1,0 +1,515 @@
+<%= title "Meio de pagamentos para Hotel, Pousada, Hostel ou similares - PagHotel" %>
+<%= meta_description "PagHotel é o meio de pagamento voltado para meios de hospedagens que buscam simplificar seus recebimentos" %>
+<%= navbar_color('bg-dark-blue') %>
+<%= navbar_option('paghotel') %>
+
+<section class="bg-dark-blue mask-dark-blue banner paghotel-banner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-7 text-center text-lg-left">
+        <h1 class="white mt-2 mb-4">Facilite suas vendas com pagHotel</h1>
+        <p class="white">O pagHotel é um meio de pagamento simples e prático voltado para pousadas, hotéis, hostels e afins, que desejam agilizar seus recebimentos</p>
+        <%= link_to 'Quero o pagHotel', 'javascript:void(0);', class: 'btn btn-lg btn-yellow mb-5', data: {'paperform-id' => 'paghotel-request', 'popup-button' => '1'} %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y-1">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-4 mb-5 mb-lg-0 text-center text-lg-right pr-lg-5">
+        <%= image_tag 'paghotel/maquina.png', class: 'paghotel-machine' %>
+      </div>
+      <div class="col-12 order-lg-first">
+        <h2 class="dark-purple text-center mb-4 mb-lg-5">Recursos que o pagHotel oferece</h2>
+      </div>
+      <div class="col-12 col-lg-8">
+        <ol class="steps-list">
+          <li>
+            <h5>Link de pagamento</h5>
+            Envie um link de pagamento para que o hóspede possa pagar com apenas alguns cliques. Além de facilitar o processo, você evita erros de lançamentos e aumenta a segurança dos recebimentos.
+          </li>
+          <li>
+            <h5>Recebimento online de cartão</h5>
+            Faça lançamentos dos cartões vindo de OTA's ou outros locais através do nosso sistema online.
+          </li>
+          <li>
+            <h5>Cobertura de cancelamento de reservas <span style="color: #32bbaa; font-weight: normal;">(em breve)<span></h5>
+            Não perca dinheiro com os cancelamentos inesperados. Tenha maior segurança com a cobertura do pagHotel.
+            <%= link_to 'saiba mais', '#insurance-section', data: { scroll: '' } %>
+          </li>
+          <% if 1 == 2 %>
+          <li>
+            <h5>Motor de reservas <span style="color: #32bbaa; font-weight: normal;">(integrações em breve)<span></h5>
+            Receba reservas direto do site do seu meio de hospedagem sem pagar comissões ou taxas paras as OTAs.
+          </li>
+          <% end %>
+          <li>
+            <h5>Maquininha de cartão</h5>
+            Ao receber um pagamento por meio da maquininha de cartão do pagHotel, o mesmo irá automaticamente para as transações financeiras, e também da reserva, dentro do Hospedin.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y-1 pt-0">
+  <div class="container">
+    <h2 class="dark-purple text-center mb-5">Vantagens de utilizar o pagHotel</h2>
+
+    <div class="row paghotel-benefits">
+      <div class="col-12 col-md-6 col-lg-4 py-4">
+        <div class="row">
+          <div class="col-2 col-lg-3 text-center">
+            <div class="icon bg-light-red white shadow">
+              <i data-feather="log-in"></i>
+            </div>
+          </div>
+          <div class="col-10 col-lg-9">
+            <h4 class="mb-2">Agilidade</h4>
+            Muito mais rapidez ao gerenciar seus recebimentos
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 py-4">
+        <div class="row">
+          <div class="col-2 col-lg-3 text-center">
+            <div class="icon bg-yellow white shadow">
+              <i data-feather="shield"></i>
+            </div>
+          </div>
+          <div class="col-10 col-lg-9">
+            <h4 class="mb-2">Confiança</h4>
+            Segurança para cobrar e receber pagamentos
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 py-4">
+        <div class="row">
+          <div class="col-2 col-lg-3 text-center">
+            <div class="icon bg-aqua white shadow">
+              <i data-feather="thumbs-up"></i>
+            </div>
+          </div>
+          <div class="col-10 col-lg-9">
+            <h4 class="mb-2">Praticidade</h4>
+            Facilidade para seus hóspedes realizarem pagamentos
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 py-4">
+        <div class="row">
+          <div class="col-2 col-lg-3 text-center">
+            <div class="icon bg-dark-blue white shadow">
+              <i data-feather="globe"></i>
+            </div>
+          </div>
+          <div class="col-10 col-lg-9">
+            <h4 class="mb-2">Acompanhamento</h4>
+            Acompanhe suas vendas e recebimentos de qualquer lugar
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 py-4">
+        <div class="row">
+          <div class="col-2 col-lg-3 text-center">
+            <div class="icon bg-green white shadow">
+              <i data-feather="target"></i>
+            </div>
+          </div>
+          <div class="col-10 col-lg-9">
+            <h4 class="mb-2">Organização</h4>
+            Mantenhas seus recebimentos organizados num só lugar
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 py-4">
+        <div class="row">
+          <div class="col-2 col-lg-3 text-center">
+            <div class="icon bg-purple-neon white shadow">
+              <i data-feather="dollar-sign"></i>
+            </div>
+          </div>
+          <div class="col-10 col-lg-9">
+            <h4 class="mb-2">Taxas competitivas</h4>
+            Trabalhe com as taxas mais competitivas do mercado
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y-1 bg-gray-blue">
+  <div id="insurance-section" class="container">
+    <h2 class="dark-purple text-center mb-3">Cobertura de cancelamento de reservas</h2>
+    <p class="dark-purple mb-4 mb-lg-5 text-center">Com o pagHotel você não sai perdendo quando um hóspede resolve cancelar a reserva</p>
+
+    <div class="bg-white dark-blue p-3 p-lg-5 rounded mb-4">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <h2 class="text-center text-lg-left mb-4">Benefícios</h2>
+        </div>
+        <div class="col-12 col-lg-6 pl-5">
+          <div class="benefits-item clearfix">
+            <i data-feather="check-circle"></i>
+            <b>Reembolso do valor integral da reserva</b> para seu hóspede sem qualquer custo para o estabelecimento
+          </div>
+          <div class="benefits-item clearfix">
+            <i data-feather="check-circle"></i>
+            <b>Reduz atritos</b> com hóspedes que optarem por cancelar
+          </div>
+          <div class="benefits-item clearfix">
+            <i data-feather="check-circle"></i>
+            <b>Melhora a confiança</b> do cliente ao fazer a reserva
+          </div>
+          <div class="benefits-item clearfix">
+            <i data-feather="check-circle"></i>
+            <b>Diminui os custos</b> com reservas canceladas e no show
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white dark-blue pt-3 px-3 pt-lg-5 px-lg-5 rounded mb-4">
+      <h2 class="text-center text-lg-left mb-4 mb-lg-5">Como funciona?</h2>
+      <ol class="insurance-steps">
+        <li>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="step-title">
+                O hóspede opta por pagar a taxa de cobertura
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="step-text">
+                O hóspede paga uma <b>taxa opcional</b> que é adicionada ao valor total da reserva. Essa taxa permite que os mesmos solicitem reembolsos de 100% das reservas não reembolsáveis em circunstâncias imprevistas ou de emergência fora de seu controle.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="step-title">
+                O comprador  deseja cancelar?
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="step-text">
+                Caso aconteça um imprevisto ou emergência que impeça o comprador de ir até o estabelecimento, ele acessará um formulário de reembolso online para fazer sua solicitação. Simples e prático.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="step-title">
+                Analisaremos o caso em até 48 horas
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="step-text">
+                A equipe de serviço de reembolso analisará de maneira discricionária o motivo da reivindicação e as evidências fornecidas dentro de 48 horas após o pedido de cancelamento.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="step-title">
+                Reembolso validado
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="step-text">
+                Faremos as verificações de sanção obrigatórias sobre o cliente que receberá o reembolso, que se dará por transferência bancária direta. Esse processo pode levar até 7 dias a partir do envio da solicitação de cancelamento.
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+      <div class="step-footer text-center">
+        <i data-feather="file-text"></i>
+        <a href="#">
+          Conheça as politicas de cobertura de cancelamento de reserva
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y-1 bg-dark-blue">
+  <div class="container">
+    <h2 class="white text-center mb-4 mb-lg-5" id="prices">Valores e condições</h2>
+    <div class="prices-card py-3 p-lg-3">
+      <div class="p-3 p-lg-2 price-item">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-2 mb-4 position-static">
+            <h3 class="clearfix text-lg-center">
+              Online
+              <span class="price-badge bg-light-red">
+                <%= image_tag 'paghotel/fire-icon.png', class: 'mr-1 align-middle d-inline-block' %>
+                Mais contratado
+              </span>
+            </h3>
+          </div>
+          <div class="col-12 col-lg-6 my-lg-2 side-separators">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <span class="check-list">
+                  <i data-feather="check-circle"></i>
+                  Link de pagamento
+                </span>
+              </div>
+              <div class="col-12 col-md-6">
+                <span class="check-list">
+                  <i data-feather="check-circle"></i>
+                  Recebimento online de cartão
+                </span>
+              </div>
+              <div class="col-12 col-md-6">
+                <span class="check-list">
+                  <i data-feather="check-circle"></i>
+                  Cobertura de cancelamentos
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 text-lg-center">
+            <span class="price-value mt-4 mt-lg-2 mb-5 mb-lg-4">
+              R$ <b>29,90</b> /mês
+            </span>
+            <%= link_to 'Contratar', 'javascript:void(0);', class: 'btn d-block d-lg-inline-block btn-lg btn-yellow ml-lg-2 rounded mb-lg-2', data: {'paperform-id' => 'paghotel-request', 'popup-button' => '1'} %>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-3 p-lg-2 price-item">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-2 mb-4">
+            <h3 class="clearfix text-lg-center">
+              Online + Máquina
+            </h3>
+          </div>
+          <div class="col-12 col-lg-6 my-lg-2 side-separators">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <span class="check-list">
+                  <i data-feather="check-circle"></i>
+                  Link de pagamento
+                </span>
+              </div>
+              <div class="col-12 col-md-6">
+                <span class="check-list">
+                  <i data-feather="check-circle"></i>
+                  Recebimento online de cartão
+                </span>
+              </div>
+              <div class="col-12 col-md-6">
+                <span class="check-list">
+                  <i data-feather="check-circle"></i>
+                  Cobertura de cancelamentos
+                </span>
+              </div>
+              <div class="col-12 col-md-6">
+                <span class="check-list">
+                  <i data-feather="check-circle"></i>
+                  1 máquina de cartão
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 text-lg-center">
+            <span class="price-value mt-4 mt-lg-2 mb-5 mb-lg-4">
+              R$ <b>49,90</b> /mês
+            </span>
+            <%= link_to 'Contratar', 'javascript:void(0);', class: 'btn d-block d-lg-inline-block btn-lg btn-dark-blue ml-lg-2 rounded mb-lg-2', data: {'paperform-id' => 'paghotel-request', 'popup-button' => '1'} %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-card-footer bg-dark-purple white">
+      <div>
+        <b>MENSALIDADE GRÁTIS</b> para estabelecimentos com vendas superior a <b>R$ 15.000,00</b>
+      </div>
+      <div class="pt-2">
+        Máquina adicional por R$ 29,90 cada
+      </div>
+    </div>
+    <div class="tax-card p-4 rounded dark-blue mt-3">
+      <h4 class="mb-4 mb-lg-5">As melhores taxas estão aqui</h4>
+      <div class="row">
+        <div class="col-12 col-lg-5 tax-payment-list">
+          <div class="row">
+            <div class="tax-payment col-8 col-lg-5">
+              Débito
+            </div>
+            <div class="col-4 col-lg-7 text-right text-lg-left">
+              2,10%
+            </div>
+            <div class="tax-payment col-8 col-lg-5">
+              Crédito à vista
+            </div>
+            <div class="col-4 col-lg-7 text-right text-lg-left">
+              2,99%
+            </div>
+            <div class="tax-payment col-8 col-lg-5">
+              Crédito até 6x
+            </div>
+            <div class="col-4 col-lg-7 text-right text-lg-left">
+              3,49%
+            </div>
+            <div class="tax-payment col-8 col-lg-5">
+              Crédito até 12x
+            </div>
+            <div class="col-4 col-lg-7 text-right text-lg-left">
+              3,99%
+            </div>
+            <div class="tax-payment col-8 col-lg-5">
+              Boleto
+            </div>
+            <div class="col-4 col-lg-7 text-right text-lg-left">
+              R$ 3,00
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 pt-4 px-lg-5 tax-info">
+          <%= image_tag 'paghotel/card-holders/c-visa.png' %>
+          <%= image_tag 'paghotel/card-holders/c-master.png' %>
+          <span class="d-block">
+            Taxas exclusivas para Visa e Mastercard, as demais bandeiras possuem um acréscimo de 1,49% no débito, crédito à vista, crédito até 6x e crédito até 12x.
+            <br><br>
+            Ficou com dúvidas? <b>Fale com a gente <%= link_to 'no chat ao lado', 'javascript: void(0);', onclick: "Intercom('showNewMessage');" %></b>
+          </span>
+        </div>
+      </div>
+      <% if 2 == 1 %>
+      <span class="price-card-footer">
+        * Receba em até 2 dias com acréscimo de 1,89% em cada parcela.
+      </span>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y-1">
+  <div class="container">
+    <h2 class="dark-purple text-center mb-4 mb-lg-5">Aceite as principais bandeiras</h2>
+    <div class="paghotel-holders">
+      <%= image_tag 'paghotel/card-holders/c-visa.png' %>
+      <%= image_tag 'paghotel/card-holders/c-master.png' %>
+      <%= image_tag 'paghotel/card-holders/c-elo.png' %>
+      <%= image_tag 'paghotel/card-holders/c-ame.png' %>
+      <%= image_tag 'paghotel/card-holders/c-dinners.png' %>
+      <%= image_tag 'paghotel/card-holders/c-hiper.png' %>
+      <%= image_tag 'paghotel/card-holders/c-jcb.png' %>
+      <%= image_tag 'paghotel/card-holders/c-aura.png' %>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y bg-gray-blue">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-4">
+        <h3 class="dark-purple mb-2 mb-lg-5 h3">Perguntas Frequentes</h3>
+        <p class="purple mb-2 mb-lg-5">Tire todas as suas dúvidas a respeito do pagHotel com nosso equipe.</p>
+        <button class="d-none d-lg-block btn btn-yellow" onclick="Intercom('showNewMessage');">Fale conosco</button>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="accordion faq-accordion">
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-5">
+              Quais taxas vou pagar pela cobertura de cancelamento de reservas?
+            </a>
+            <div class="collapse purple" id="faq-5">
+              <p>
+                Nenhuma. As taxas são cobradas do hóspede no momento da reserva se ele optar por utilizar a cobertura de cancelamentos.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-4">
+              Se eu precisar de mais de uma máquina de cartão, como faço?
+            </a>
+            <div class="collapse purple" id="faq-4">
+              <p>
+                Se você precisar adquirir mais de uma máquina de cartão, faça contato conosco. Neste cenário, serão acrescidos ao seu plano R$ 29,90 por cada máquina extra.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-2">
+              Após o pagamento do hóspede, em quanto tempo o dinheiro fica disponível?
+            </a>
+            <div class="collapse purple" id="faq-2">
+              <p>
+                Os pagamentos com cartão de débito são creditados no próximo dia útil. Pagamentos com crédito dependerão do parcelamento, crédito à vista por exemplo são 30 dias, assim como o boleto bancário pode levar até 48 horas.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-1">
+              Posso antecipar meus recebimentos?
+            </a>
+            <div class="collapse purple" id="faq-1">
+              <p>
+                Atualmente não. Você receberá dentro do fluxo normal de vendas. 2 dias no débito, 30 dias no crédito à vista e o crédito parcelado receberá em multiplos de 30 dias de acordo com a parcela.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-3">
+              Onde poderei acompanhar meus recebimentos?
+            </a>
+            <div class="collapse purple" id="faq-3">
+              <p>
+                Aderindo ao pagHotel, você poderá visualizar suas transações em um dashboard completo e intuitivo, facilmente acessado pelo navegador de internet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-4 bg-purple">
+        <div class="card-product text-center">
+          <h2 class="white"><%= link_to "Sistema Hoteleiro (PMS)", root_path %></h2>
+          <p class="white mx-auto">Software de produtividade para pousadas, hotéis, hostels e meios de hospedagens</p>
+          <%= link_to 'Saiba mais', root_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-light-blue">
+        <div class="card-product text-center">
+          <h2 class="white"><%= link_to "Channel Manager", channels_path %></h2>
+          <p class="white mx-auto">Gerencie as reservas dos canais de venda em um só lugar (integração com parceiros)</p>
+          <%= link_to 'Saiba mais', channels_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-yellow">
+        <div class="card-product text-center">
+          <h2 class="dark-purple"><%= link_to "Motor de Reservas", engine_path %></h2>
+          <p class="purple mx-auto">Receba reservas diretamente do seu site (integração com parceiros)</p>
+          <%= link_to 'Saiba mais', engine_path, class: 'btn btn-white btn-white-hover-alt btn-shadow' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

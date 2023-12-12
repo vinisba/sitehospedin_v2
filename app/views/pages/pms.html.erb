@@ -1,0 +1,472 @@
+<%= title "Hospedin - Software e Sistema para Hotel, Pousada, Hostel e Similares" %>
+<%= meta_description "Tenha total controle das suas reservas, acomodações e hóspedes com o Hospedin, o melhor Sistema de Gestão para Hotel, Pousada, Hostel e Similares." %>
+<%= navbar_color('bg-dark-blue ') %>
+<section class="bg-dark-blue mask-blue banner homepage-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5 text-center text-lg-left">
+        <h1 class="white">Software de Produtividade Hoteleira</h1>
+        <p class="white mx-auto mx-lg-0">Tenha total controle das suas reservas, acomodações e hóspedes com o Sistema Hoteleiro Hospedin</p>
+        <%= link_to 'Peça um teste do software hoteleiro', test_path, class: 'btn btn-lg btn-yellow' %>
+        <span class="white small d-none d-lg-block mt-3 ml-4">Teste gratuitamente por 10 dias</span>
+      </div>
+      <div class="col-12 d-lg-none">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path 'banners/home-mobile.png' %>" class="img-fluid mt-1 mt-md-0 mt-lg-5 lozad" alt="Notebook Hospedin">
+      </div>
+    </div>
+    <div class="banner-preview d-none d-lg-block">
+      <%= image_tag 'banners/home.png', class: 'img-fluid', alt: 'Software para Hotéis Pousadas e Hostels' %>
+      <span class="bullet bullet-like">
+        <i data-feather="thumbs-up"></i>
+      </span>
+      <span class="bullet bullet-money">
+        <i data-feather="dollar-sign"></i>
+      </span>
+      <span class="bullet bullet-time">
+        <i data-feather="clock"></i>
+      </span>
+      <span class="bullet bullet-calendar">
+        <i data-feather="calendar"></i>
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="functionalities padding-y">
+  <div class="container">
+    <h2 class="dark-purple text-center mb-4 h3">PRINCIPAIS FUNCIONALIDADES</h2>
+    <p class="purple text-center">
+    Desenvolvido para administrar pousadas, hotéis, hostels ou qualquer conjunto de acomodações de forma simples e profissional.
+    </p>
+    <div class="row mt-5 align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/mapa-de-reservas-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Mapa de reservas do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pl-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="calendar"></i>
+            Mapa de reservas
+          </h3>
+          <p class="purple">
+            Com  o mapa de reservas você poderá gerenciar os quartos do seu hotel de forma prática evitando o temido overbooking. Através do mapa você visualiza, de maneira clara, os locais ocupados e disponíveis tornando o atendimento ao hóspede mais rápido, prático e seguro.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-lg-last">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/disponibilidade-de-quartos-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Disponibilidade de quartos do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pr-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="log-in"></i>
+            Disponibilidade dos quartos
+          </h3>
+          <p class="purple">
+            Na tela principal do Hospedin, você visualiza a situação atual do seu hotel ou pousada, ou seja, de acordo com a cor você facilmente identifica se um quarto está disponível, ocupado, em limpeza, bloqueado ou vencido. Nos quartos que estão ocupados você poderá acessar rapidamente as informações da estadia clicando nos botões de acesso rápido.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/indicadores-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Indicadores do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pl-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="trending-up"></i>
+            Indicadores
+          </h3>
+          <p class="purple">
+            Na tela de indicadores você visualiza os principais indicadores hoteleiros gerados automaticamente de acordo com as reservas que foram inseridas em nosso software hoteleiro. Através deles você identifica facilmente o andamento do seu negócio agilizando a sua tomada de decisão. <i>(disponível somente no módulo plus)</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-lg-last">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/graficos-do-software-para-hotel-e-pousada.jpg' %>" class="img-fluid img-shadow lozad" alt="Gráficos do software para hotel e pousada">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pr-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="pie-chart"></i>
+            Gráficos
+          </h3>
+          <p class="purple">
+            Os gráficos possuem um papel fundamental na gestão do seu negócio. Através deles você terá uma visão global do que está acontecendo para que possa tomar decisões mais assertivas em tempo real. O Hospedin oferece vários gráficos inseridos nos relatórios e na tela de indicadores. <i>(disponível somente nos módulos plus e financeiro)</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/relatorio-de-vendas-para-o-software-para-hotel-e-pousada.jpg' %>" class="img-fluid img-shadow lozad" alt="Relatório de vendas para o software para hotel e pousada">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pl-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="file-text"></i>
+            Relatórios
+          </h3>
+          <p class="purple">
+            Assim como os gráficos, os relatórios são de grande importância para a gestão de qualquer negócio.  Por meio deles se pode ter clareza sobre o crescimento do hotel ou o quanto deixou de crescer em determinado período. No Hospedin os principais relatórios são de Vendas, Financeiro, Consumo e Ocupação. Com eles você poderá filtrar e fazer os mais variados tipos de análise. <i>(disponível somente nos módulos plus e financeiro)</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-lg-last">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/tarifario-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Tarifário do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pr-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="dollar-sign"></i>
+            Tarifário dinâmico
+          </h3>
+          <p class="purple">
+            Com este recurso você conseguirá automatizar os preços das diárias do seu estabelecimento de forma simples, definindo tarifários de alta e baixa temporada, carnaval, réveillon ou qualquer outro período do ano. Também é possível definir valores por adulto e criança, além de pacotes e categorias de cada quarto ou apartamento. <i>(disponível somente no módulo plus)</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/contas-a-pagar-e-a-receber-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Contas à pagar e a receber do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pl-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="credit-card"></i>
+            Contas a pagar e a receber
+          </h3>
+          <p class="purple">
+            No Hospedin você consegue gerir todas as receitas e despesas que passam pela sua pousada. Através do menu Transações, você organiza as contas a pagar e a receber de forma simples e rápida, como também pode adicionar pagamentos recorrentes dando muito mais agilidade ao seu dia a dia. <i>(disponível somente no módulo financeiro)</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-lg-last">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/produtos-e-servicos-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Produtos e serviços do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pr-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="shopping-cart"></i>
+            Controle de produtos e serviços
+          </h3>
+          <p class="purple">
+            Adicione produtos ou serviços diretamente no quarto do hóspede, além de facilitar no cálculo do que foi consumido, nosso software de hotel também realiza o controle de estoque dos itens vendidos, este recurso é justamente para os hotéis que trabalham com frigobar ou oferecem serviços extras como lavanderia, passar roupa, passeios e outros do gênero.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/lista-de-reservas-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Lista de reservas do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pl-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="book-open"></i>
+            Controle de reservas
+          </h3>
+          <p class="purple">
+            Além do mapa de reservas, nosso sistema hoteleiro possui uma lista com todas as reservas realizadas no estabelecimento, é possível buscar e filtrar facilmente toda e qualquer informação da reserva, quarto ou hóspedes, como também ordenar e exportar as informações.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-lg-last">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/fnrh-ficha-nacional-de-registro de-hospedes-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="FNRH - Ficha Nacional de Registro de Hóspedes do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pr-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="clipboard"></i>
+            FNRH e voucher
+          </h3>
+          <p class="purple">
+            Em nosso software utilizamos a Ficha Nacional de Registro Hóspedes recomendada pela Embratur, é através dela que você recolherá a assinatura e informações dos seus hóspedes. Além da Ficha, que é utilizada quando o hóspede chega na pousada, temos o voucher que você pode enviar para o e-mail com apenas um clique dando muito mais agilidade e profissionalismo ao seu estabelecimento. <i>(envio de voucher por e-mail disponível somente no módulo plus)</i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/historico-de-estadias-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Histórico de estadias do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pl-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="clock"></i>
+            Histórico de estadias
+          </h3>
+          <p class="purple">
+            Nada melhor do que encontrar todas as informações do hóspede centralizadas e organizadas em um único lugar, não é mesmo? Pois é isso que o histórico de estadias faz pra você. Com poucos cliques é possível visualizar todas as informações pertinentes a reserva do hóspede.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center functionality">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-lg-last">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-src="<%= image_path '/screens/reservas-em-grupo-do-software-para-hotel.jpg' %>" class="img-fluid img-shadow lozad" alt="Reservas em grupo do software para hotel">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="pr-lg-5">
+          <h3 class="dark-purple mb-2 mb-lg-3">
+            <i class="mr-1" data-feather="users"></i>
+            Reservas em Grupo
+          </h3>
+          <p class="purple">
+            Com a função de reservas em grupo você poderá reservar vários quartos ou apartamentos ao mesmo tempo. Este recurso é ideal para pousadas, hotéis e outros estabelecimentos que recebem excursões ou fazem reservas de vários locais para uma mesma pessoa com frequência. <i>(disponível somente no módulo plus)</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="container-separator"></div>
+</div>
+
+<section class="padding-y">
+  <div class="container">
+    <h2 class="dark-purple text-center mb-4">Todas as funcionalidades</h2>
+    <p class="purple text-center mb-5">
+      O Hospedin conta com vários recursos que aumentarão significativamente a produtividade do seu negócio, além do <b>Plano Hospedin</b> que varia de acordo com o número de quartos, você pode adicionar <b>5 módulos extras</b> e <b>integrações</b> para potencializar ainda mais a sua gestão.
+    </p>
+
+    <!-- Plans Desktop -->
+    <div class="plans d-none d-lg-block">
+      <div class="row no-gutters">
+        <div class="col-12 col-lg-3">
+          <div class="plans-select">
+            <ul>
+              <li data-plan="#module-hospedin" class="plan plan-selected">Plano Hospedin</li>
+              <li data-plan="#module-plus" class="plan">Módulo Plus</li>
+              <li data-plan="#module-financeiro" class="plan">Módulo Financeiro</li>
+              <li data-plan="#module-restaurante" class="plan border-bottom">Integrações</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9 border-left">
+          <%= render 'modules/hospedin' %>
+          <%= render 'modules/plus' %>
+          <%= render 'modules/financeiro' %>
+          <%= render 'modules/restaurante' %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plans Mobile -->
+    <div class="plans-mobile accordion mt-4 mb-2 d-block d-lg-none">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#planHospedin">
+              Plano Hospedin
+              <div class="plan-see float-right">
+                <i data-feather="chevron-down"></i>
+              </div>
+            </button>
+          </h2>
+        </div>
+
+        <div id="planHospedin" class="collapse show">
+          <div class="card-body">
+            <%= render 'modules/hospedin' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#planPlus">
+              Módulo Plus
+              <div class="plan-see float-right">
+                <i data-feather="chevron-down"></i>
+              </div>
+            </button>
+          </h2>
+        </div>
+
+        <div id="planPlus" class="collapse">
+          <div class="card-body">
+            <%= render 'modules/plus' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#planFinanceiro">
+              Módulo Financeiro
+              <div class="plan-see float-right">
+                <i data-feather="chevron-down"></i>
+              </div>
+            </button>
+          </h2>
+        </div>
+
+        <div id="planFinanceiro" class="collapse">
+          <div class="card-body">
+            <%= render 'modules/financeiro' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#planRestaurante">
+              Integrações
+              <div class="plan-see float-right">
+                <i data-feather="chevron-down"></i>
+              </div>
+            </button>
+          </h2>
+        </div>
+
+        <div id="planRestaurante" class="collapse">
+          <div class="card-body">
+            <%= render 'modules/restaurante' %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-purple text-center small mb-5"><strong>OBS:</strong> As funcionalidades com o símbolo <strong>*</strong> ainda estão em desenvolvimento</div>
+    <h4 class="mb-3 dark-purple text-center">Todos os planos oferecem:</h4>
+
+    <div class="row no-gutters bg-dark-blue white card-plans">
+      <div class="col-12 col-lg-4 p-4 text-left text-lg-center">
+        <i class="align-middle mr-3 white" data-feather="download-cloud"></i>
+        Backup diário automático
+      </div>
+      <div class="col-12 col-lg-4 p-4 text-left text-lg-center">
+        <i class="align-middle mr-3 white" data-feather="headphones"></i>
+        Suporte gratuito
+      </div>
+      <div class="col-12 col-lg-4 p-4 text-left text-lg-center">
+        <i class="align-middle mr-3 white" data-feather="refresh-cw"></i>
+        Atualizações gratuitas
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y">
+  <div class="container text-center">
+    <h3 class="dark-purple mb-5">Confira o plano ideal e teste gratuitamente por 10 dias!</h3>
+    <%= link_to 'Calcule o preço do seu investimento', 'javascript: void(0);', class: 'btn btn-yellow', data: {toggle: 'modal', target: '#priceModal'} %>
+  </div>
+</section>
+
+<section class="padding-y bg-gray-blue">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-4">
+        <h3 class="dark-purple mb-2 mb-lg-5 h3">Perguntas Frequentes</h3>
+        <p class="purple mb-2 mb-lg-5">Tire todas as suas dúvidas a respeito do nosso sistema para pousadas, hotéis, hotels e outros meios de hospedagem.</p>
+        <button class="d-none d-lg-block btn btn-yellow" onclick="Intercom('showNewMessage');">Fale conosco</button>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="accordion faq-accordion">
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-1">
+              Quanto tempo eu posso testar grátis?
+            </a>
+            <div class="collapse purple" id="faq-1">
+              <p>
+                Você tem 10 dias para testar nosso sistema hoteleiro gratuitamente e ter a certeza que o Hospedin é a melhor ferramenta para o seu estabelecimento. Depois disso, nossos planos são pré-pagos, ou seja, o cliente realiza o pagamento antes de usar a ferramenta.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-5">
+              Quais são as formas de pagamento disponíveis?
+            </a>
+            <div class="collapse purple" id="faq-5">
+              <p>
+                Cartão de crédito (Visa, Mastercard, American Express, Elo, Hipercard, Diners, Discover, Aura e JCB) e boleto, sendo que, para o modelo assinatura os boletos não estão disponíveis.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-4">
+              O pagamento do plano anual pode ser parcelado?
+            </a>
+            <div class="collapse purple" id="faq-4">
+              <p>
+                Não. O pagamento do plano anual é feito à vista.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-2">
+              O período de testes terminou, o que faço agora?
+            </a>
+            <div class="collapse purple" id="faq-2">
+              <p>
+                Você pode entrar dentro do sistema com o seu usuário e será direcionado automaticamente para a tela de pagamento, basta seguir os passos e concluir o pagamento. Vale lembrar que pagamentos com cartão de crédito liberam o sistema imediatamente, já pagamentos com boletos podem levar as 2 dias úteis para que o sistema seja liberado.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-3">
+              O período de testes ainda não acabou, se contratar perderei os dias restantes?
+            </a>
+            <div class="collapse purple" id="faq-3">
+              <p>
+                Não, nós oferecermos o uso do Hospedin em caráter de testes por 10 dias. Se você fizer a assinatura de um plano pago neste período, será acrescentado os dias restantes no vencimento da sua conta.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <a class="faq-btn btn btn-link text-left text-h4 dark-purple py-4 collapsed" data-toggle="collapse" href="#faq-6">
+              Nenhum dos planos oferecidos se enquadra às minhas necessidades. O que faço?
+            </a>
+            <div class="collapse purple" id="faq-6">
+              <p>
+                Os planos do Hospedin foram criados de acordo com as necessidades de nossos clientes. Se você deseja contratar a ferramenta e não se sente confortável com nenhum plano, por favor, entre em contato com nosso time de vendas através do contato@hospedin.com ou (48) 3354-1750.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-6 bg-light-blue">
+        <div class="card-product text-center">
+          <%= image_tag 'icons/product-icons/masked-channel.svg', class: 'img-fluid rounded mb-3', alt: 'Channel Manager - Hospedin' %>
+          <h2 class="white"><%= link_to 'Channel Manager', channels_path %></h2>
+          <p class="white mx-auto">Organize as reservas do Booking, Expedia, Decolar e outros canais em um só lugar.</p>
+          <%= link_to 'Explorar produto', channels_path, class: 'btn btn-white btn-shadow' %>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 bg-yellow">
+        <div class="card-product text-center">
+          <%= image_tag 'icons/product-icons/masked-reservation.svg', class: 'img-fluid rounded mb-3', alt: 'Motor de Reservas - Hospedin' %>
+          <h2 class="dark-purple"><%= link_to 'Motor de Reservas', engine_path %></h2>
+          <p class="purple mx-auto">Receba reservas diretamente do seu site e reduza as comissões dos canais de venda.</p>
+          <%= link_to 'Explorar produto', engine_path, class: 'btn btn-white btn-white-hover-alt btn-shadow' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,114 @@
+<%= title "Hotelflix - Hospedin" %>
+<%= meta_description "Videos e Filmes para o Hoteleiro maratonar nesta quarentena" %>
+<%= navbar_color('bg-black-hotelflix-navbar') %>
+
+<section class="bg-black-hotelflix-banner mask-black library-banner">
+  <div class="container text-center pt-3">
+    <h1 class="white mb-2 pt-3">Vídeos e Filmes para o Hoteleiro<br/> maratonar na quarentena</h1>
+    <p class="white">Assista onde e quando quiser!</p>
+  </div>
+</section>
+
+<br/><br/>
+
+<section class="padding-y">
+  <div class="container">
+    <h3 class="white mb-2 mb-lg-3">
+      Leve seu ATENDIMENTO para o próximo nível
+      <div class="documents-nav carousel-nav nav-red float-right">
+        <span class="nav-prev disabled"><i data-feather="arrow-left"></i></span>
+        <span class="nav-next"><i data-feather="arrow-right"></i></span>
+      </div>
+    </h3>
+    <div class="documents-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'https://youtu.be/Ligb9unBx3I?utm_source=hotelflix', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'hotelflix/videos/tudo-sobre-recepcionista-de-hotel.jpg', class: 'img-fluid rounded', title: 'Recepcionista de hotel: o que você precisa saber sobre esse cargo? | Hotelflix', alt: 'Recepcionista de hotel: o que você precisa saber sobre esse cargo? | Hotelflix' %>
+      <% end %>
+      <%= link_to 'https://youtu.be/DWEq1ixoNpQ?utm_source=hotelflix', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'hotelflix/videos/checkin-automatizado.jpg', class: 'img-fluid rounded', title: 'Check-in automatizado funciona ou é uma furada? | Hotelflix', alt: 'Check-in automatizado funciona ou é uma furada? | Hotelflix' %>
+      <% end %>
+      <%= link_to 'https://youtu.be/oOOfKvE0Sm4?utm_source=hotelflix', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'hotelflix/videos/whatsapp-e-um-bom-meio-de-comunicacao.jpg', class: 'img-fluid rounded', title: 'WhatsApp é um bom meio de comunicação com o seu hóspede? | Hotelflix', alt: 'WhatsApp é um bom meio de comunicação com o seu hóspede? | Hotelflix' %>
+      <% end %>
+      <%= link_to 'https://youtu.be/Pq7ucBpL3hE?utm_source=hotelflix', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'hotelflix/videos/cadastro-de-hospedes.jpg', class: 'img-fluid rounded', title: 'Cadastro de hóspedes: você está cuidando do seu pote de ouro? | Hotelflix', alt: 'Cadastro de hóspedes: você está cuidando do seu pote de ouro? | Hotelflix' %>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y pt-0">
+  <div class="container">
+    <h3 class="white mb-2 mb-lg-3">
+      Aumente suas RESERVAS
+      <div class="documents-nav carousel-nav nav-red float-right">
+        <span class="nav-prev disabled"><i data-feather="arrow-left"></i></span>
+        <span class="nav-next"><i data-feather="arrow-right"></i></span>
+      </div>
+    </h3>
+    <div class="documents-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'https://youtu.be/97LzBK_PVFk?utm_source=hotelflix', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'hotelflix/videos/porque-o-hospede-nao-fecha-reserva.jpg', class: 'img-fluid rounded', title: 'Por que o hóspede não fecha reserva? | Hotelflix', alt: 'Por que o hóspede não fecha reserva? | Hotelflix' %>
+      <% end %>
+      <%= link_to 'https://youtu.be/_kL8mGa0CAM?utm_source=hotelflix', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'hotelflix/videos/email-mkt-morreu.jpg', class: 'img-fluid rounded', title: 'email-mkt-morreu | Hotelflix', alt: 'E-mail Marketing morreu ou ainda é uma boa estratégia? | Hotelflix' %>
+      <% end %>
+      <%= link_to 'https://youtu.be/ZTj-5LZtQ1k?utm_source=hotelflix', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'hotelflix/videos/webinar-estrategias.jpg', class: 'img-fluid rounded', title: 'Webinar de estratégias de marketing digital para vender mais | Hotelflix', alt: 'Webinar de estratégias de marketing digital para vender mais | Hotelflix' %>
+      <% end %>
+      <%= link_to 'https://youtu.be/nepTDa7KGho?utm_source=hotelflix', target: '_blank', class: 'img-card hover-zoom item' do %>
+        <%= image_tag 'hotelflix/videos/influenciadores-digitais.jpg', class: 'img-fluid rounded', title: 'Como usar influenciadores digitais a favor do seu meio de hospedagem? | Hotelflix', alt: 'Como usar influenciadores digitais a favor do seu meio de hospedagem? | Hotelflix' %>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="padding-y pt-0">
+  <div class="container">
+    <h3 class="white mb-2 mb-lg-3">
+      Dicas de Filmes
+      <div class="books-nav carousel-nav nav-red float-right">
+        <span class="nav-prev disabled"><i data-feather="arrow-left"></i></span>
+        <span class="nav-next"><i data-feather="arrow-right"></i></span>
+      </div>
+    </h3>
+    <div class="books-carousel carousel dots-blue dots-left owl-carousel owl-theme has-hover-zoom">
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-207825', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/o-grande-hotel-budapeste.jpg', class: 'img-fluid rounded', title: 'O Grande Hotel Budapest | Hotelflix', alt: 'O Grande Hotel Budapest | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-186338', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/o-exotico-hotel-marigold.jpg', class: 'img-fluid rounded', title: 'O Exótico Hotel Marigold | Hotelflix', alt: 'O Exótico Hotel Marigold | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-182075', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/compramos-um-zoologico.jpg', class: 'img-fluid rounded', title: 'Compramos um Zoológico | Hotelflix', alt: 'Compramos um Zoológico | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-206217', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/um-senhor-estagiario.jpg', class: 'img-fluid rounded', title: 'Um Senhor Estagiário | Hotelflix', alt: 'Um Senhor Estagiário | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-54098', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/a-procura-da-felicidade.jpg', class: 'img-fluid rounded', title: 'A Procura da Felicidade | Hotelflix', alt: 'A Procura da Felicidade | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-132048', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/um-sonho-impossivel.jpg', class: 'img-fluid rounded', title: 'Um Sonho Possível | Hotelflix', alt: 'Um Sonho Possível | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-206149', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/os-estagiarios.jpg', class: 'img-fluid rounded', title: 'Os Estagiários | Hotelflix', alt: 'Os Estagiários | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-140005', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/o-homem-que-mudou-o-jogo.jpg', class: 'img-fluid rounded', title: 'O Homem que mudou o jogo | Hotelflix', alt: 'O Homem que mudou o jogo | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-227900', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/a-grande-aposta.jpg', class: 'img-fluid rounded', title: 'A Grande Aposta | Hotelflix', alt: 'A Grande Aposta | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-129694', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/invictus.jpg', class: 'img-fluid rounded', title: 'Invictus | Hotelflix', alt: 'Invictus | Hotelflix' %>
+      <% end %>
+      <%= link_to 'http://www.adorocinema.com/filmes/filme-145397', class: 'img-card hover-zoom item', target: '_blank' do %>
+        <%= image_tag 'hotelflix/movies/o-lado-bom-da-vida.jpg', class: 'img-fluid rounded', title: 'O lado bom da vida | Hotelflix', alt: 'O lado bom da vida | Hotelflix' %>
+      <% end %>
+    </div>
+    <p class="white small">Você pode assistir os filmes na <a href="https://www.netflix.com/br" target="_blank">Netflix</a> ou <a href="https://www.stremio.com" target="_blank">Stremio (gratuito)</a></p>
+  </div>
+</section>
+
+<%= render 'shared/newsletter_form' %>

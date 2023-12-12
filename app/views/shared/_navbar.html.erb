@@ -1,0 +1,157 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-hospedin <%= yield :navbar_option %>" color="<%= yield :navbar_color %> navbar-shadow">
+  <div class="container">
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <%= link_to root_path, class: 'navbar-brand mx-auto mx-lg-0' do %>
+      <div class="logo <%= set_html_class('paghotel', is_paghotel) %>"></div>
+    <% end %>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+      <div class="navbar-nav_container">
+        <li class="nav-item">
+          <%= link_to 'Produtos <i data-feather="chevron-down"></i>'.html_safe, 'javascript:void(0);', class: 'nav-link dropdown-toggle', data: {toggle: 'dropdown', target: '#products-nav'} %>
+          <ul class="nav-dropdown dropdown-menu" id="products-nav">
+            <% if 1 == 2 %>
+            <li class="nav-dropdown-item">
+              <%= link_to root_path do %>
+                <div class="nav-dropdown-icon white bg-purple"><i data-feather="home"></i></div>
+                <span class="nav-dropdown-title">Sistema Hoteleiro (PMS)</span>
+                <span class="nav-dropdown-description">Tenha total controle das suas reservas, acomodações e hóspedes.</span>
+              <% end %>
+            </li>
+            <% end %>
+            <% # hide paghotel %>
+            <!--
+            <li class="nav-dropdown-item">
+              <%= link_to paghotel_path do %>
+                <div class="nav-dropdown-icon white bg-dark-blue"><i data-feather="credit-card"></i></div>
+                <span class="nav-dropdown-title">pagHotel</span>
+                <span class="nav-dropdown-description">O meio de pagamento que organiza e simplifica a gestão das pousadas e hotéis</span>
+              <% end %>
+            </li>
+            -->
+             <li class="nav-dropdown-item">
+              <%= link_to pms_path do %>
+                <%= image_tag 'icons/product-icons/pms.svg', class: 'img-fluid nav-dropdown-icon rounded mb-3', alt: 'Sistema Hoteleiro Hospedin -  PMS' %>
+                <span class="nav-dropdown-title">Sistema Hoteleiro -  PMS </span>
+                <span class="nav-dropdown-description">Tenha total controle das suas reservas, acomodações e hóspedes</span>
+              <% end %>
+            </li>
+
+            <li class="nav-dropdown-item">
+              <%= link_to channels_path do %>
+                <%= image_tag 'icons/product-icons/channel.svg', class: 'img-fluid nav-dropdown-icon rounded mb-3', alt: 'Gestor de Canais Hospedin' %>
+                <span class="nav-dropdown-title">Gestor de Canais</span>
+                <span class="nav-dropdown-description">Gerencie as reservas dos canais de venda em um só lugar</span>
+              <% end %>
+            </li>
+            <li class="nav-dropdown-item">
+              <%= link_to engine_path do %>
+                <%= image_tag 'icons/product-icons/reservation.svg', class: 'img-fluid nav-dropdown-icon rounded mb-3', alt: 'Motor de Reservas Hospedin' %>
+                <span class="nav-dropdown-title">Motor de Reservas</span>
+                <span class="nav-dropdown-description">Receba reservas diretamente do seu site</span>
+              <% end %>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Quem somos', about_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item <%= set_html_class('d-none', is_paghotel) %>">
+          <%= link_to 'Preços', nil, class: 'nav-link', data: {toggle: 'modal', target: '#priceModal'} %>
+        </li>
+        <li class="nav-item d-none <%= set_html_class('d-lg-block', is_paghotel) %>">
+          <%= link_to 'Preços', '#prices', class: 'nav-link', data: {scroll: ''} %>
+        </li>
+        <li class="nav-item dropdown border-mobile-none">
+          <%= link_to 'Educação <i data-feather="chevron-down"></i>'.html_safe, 'javascript:void(0);', class: 'nav-link dropdown-toggle', data: {toggle: 'dropdown', target: '#education-nav'} %>
+          <ul class="nav-dropdown dropdown-menu" id="education-nav">
+            <li class="nav-dropdown-item">
+              <%= link_to 'http://blog.hospedin.com', target: '_blank' do %>
+                <div class="nav-dropdown-icon white bg-purple"><i data-feather="message-square"></i></div>
+                <span class="nav-dropdown-title">Blog</span>
+                <span class="nav-dropdown-description">Conteúdo sobre o mercado hoteleiro</span>
+              <% end %>
+            </li>
+            <li class="nav-dropdown-item">
+              <%= link_to libraries_path do %>
+                <div class="nav-dropdown-icon white bg-red"><i data-feather="file-text"></i></div>
+                <span class="nav-dropdown-title">Materiais Educativos</span>
+                <span class="nav-dropdown-description">E-books, planilhas e vídeos educativos</span>
+              <% end %>
+            </li>
+            <li class="nav-dropdown-item">
+              <%= link_to courses_path do %>
+                <div class="nav-dropdown-icon white bg-green"><i data-feather="pen-tool"></i></div>
+                <span class="nav-dropdown-title">Cursos</span>
+                <span class="nav-dropdown-description">Aprimore sua carreira com nossos cursos</span>
+              <% end %>
+            </li>
+          </ul>
+        </li>
+        </div>
+        <div class="d-flex client-options">
+          <% if is_external_pms %>
+            <li class="nav-item">
+              <%= link_to 'Fale com um consultor',  'https://educativos.hospedin.com/fale-com-um-consultor', target: '_blank', class: 'btn btn-white' %>
+            </li>
+          <% else %>
+          <li class="nav-item ml-3">
+          <%= link_to 'Já sou cliente <i data-feather="chevron-down"></i>'.html_safe, 'javascript:void(0);', class: 'nav-link dropdown-toggle', data: {toggle: 'dropdown', target: '#client-login'} %>
+          <ul class="nav-dropdown dropdown-menu" id="client-login">
+             <li class="dropdown-client-login">
+                <div>
+                  <%= image_tag 'icons/product-icons/pms.svg', class: 'img-fluid nav-dropdown-icon rounded', alt: 'Sistema Hoteleiro Hospedin -  PMS' %>
+                  <span class="nav-dropdown-title">Sistema Hoteleiro - PMS </span>
+                </div>
+                <a href="https://pms.hospedin.com" target="_blank" class="dropdown-client-login-button">
+                  Entrar
+                  <i data-feather="arrow-right"></i>
+                </a>
+            </li>
+
+            <li class="dropdown-client-login">
+              <div>
+                <%= image_tag 'icons/product-icons/channel.svg', class: 'img-fluid nav-dropdown-icon rounded', alt: 'Gestor de Canais Hospedin' %>
+                <span class="nav-dropdown-title">Gestor de Canais</span>
+              </div>
+              <a href="https://channel.hospedin.com/#/dashboard/" target="_blank" class="dropdown-client-login-button">
+                Entrar
+                <i data-feather="arrow-right"></i>
+              </a>
+            </li>
+            <li class="dropdown-client-login">
+              <div>
+                <%= image_tag 'icons/product-icons/reservation.svg', class: 'img-fluid nav-dropdown-icon rounded', alt: 'Motor de Reservas Hospedin' %>
+                <span class="nav-dropdown-title">Motor de Reservas</span>
+              </div>
+              <a href="https://channel.hospedin.com/#/dashboard/" target="_blank" class="dropdown-client-login-button">
+                Entrar
+                <i data-feather="arrow-right"></i>
+              </a>            
+            </li>
+            <a href="" class="dropdown-client-login-footer">
+              <i data-feather="message-square"></i>
+              Conversar com o Suporte
+            </a>
+          </ul>
+        </li>
+          <li class="nav-item">
+            <%= link_to 'Faça um teste grátis', test_path(modules: 'channel'), class: 'btn btn-white' %>
+          </li>
+        <% end %>
+        <li class="nav-item d-none <%= set_html_class('d-lg-block', is_paghotel) %>">
+          <%= link_to 'Quero o pagHotel', 'javascript:void(0);', class: 'btn btn-white', data: {'paperform-id' => 'paghotel-request', 'popup-button' => '1'} %>
+        </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>

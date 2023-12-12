@@ -18,4 +18,7 @@ var componentRequireContext = require.context("components", true);
 var ReactRailsUJS = require("react_ujs");
 ReactRailsUJS.useContext(componentRequireContext);
 
+import "popper.js/dist/popper";
+// import 'bootstrap/dist/js/bootstrap';
 import "../assets/stylesheets/application.scss";
+import "../app";

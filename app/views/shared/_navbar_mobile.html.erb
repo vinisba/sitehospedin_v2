@@ -1,0 +1,93 @@
+<nav class="nav-menu-mobile animated fadeInDown faster">
+  <div class="nav-login ">
+   <div class="nav-login-header">
+    <span class="nav-item-header">Já sou cliente</span>
+    <%= link_to 'Fale com um consultor',  'https://educativos.hospedin.com/fale-com-um-consultor', target: '_blank', class: 'btn btn-sm btn-yellow' %>  </div>
+  <ul class="nav-items">
+    <li class="item-login">
+      <div>
+        <%= image_tag 'icons/product-icons/pms.svg', class: 'img-fluid nav-dropdown-icon rounded', alt: 'Sistema Hoteleiro Hospedin -  PMS' %>
+        <span class="ml-3 mr-4">Sistema Hoteleiro - PMS </span>
+      </div>
+      <a href="https://pms.hospedin.com" target="_blank" class="dropdown-client-login-button">
+        Entrar
+        <i data-feather="arrow-right"></i>
+      </a>
+    </li>
+    <li class="item-login">
+      <div>
+        <%= image_tag 'icons/product-icons/channel.svg', class: 'img-fluid nav-dropdown-icon rounded', alt: 'Gestor de Canais Hospedin' %>
+        <span class="ml-3 mr-4">Gestor de Canais</span>
+      </div>
+      <a href="https://channel.hospedin.com/#/dashboard/" target="_blank"  class="dropdown-client-login-button">
+        Entrar
+        <i data-feather="arrow-right"></i>
+      </a>
+    </li>
+    <li class="item-login">
+      <div>
+        <%= image_tag 'icons/product-icons/reservation.svg', class: 'img-fluid nav-dropdown-icon rounded', alt: 'Motor de Reservas Hospedin' %>
+        <span class="ml-3 mr-4">Motor de Reservas</span>
+      </div>
+      <a href="https://channel.hospedin.com/#/dashboard/" target="_blank" class="dropdown-client-login-button">
+        Entrar
+        <i data-feather="arrow-right"></i>
+      </a>  
+    </li>
+  </ul>
+    <div class="clearfix"></div>
+  </div>
+
+  <ul class="nav-items">
+    <li class="nav-item">
+      <%= link_to 'Home', root_path %>
+    </li>
+    <li class="nav-item">
+      <span class="nav-item-header">Produtos</span>
+      <ul class="subnav-items">
+        <% # hide paghotel %>
+        <!--
+        <li class="nav-item">
+          <div class="nav-item-icon white bg-dark-blue"><i data-feather="credit-card"></i></div>
+          <%= link_to 'pagHotel', paghotel_path %>
+        </li>
+        -->
+        <li class="nav-item">
+          <%= image_tag 'icons/product-icons/pms.svg', class: 'img-fluid rounded mr-3', alt: 'Sistema Hoteleiro Hospedin -  PMS' %>
+          <%= link_to 'Sistema Hoteleiro Hospedin -  PMS', pms_path %>
+        </li>
+        <li class="nav-item">
+        <%= image_tag 'icons/product-icons/channel.svg', class: 'img-fluid rounded mr-3', alt: 'Gestor de Canais Hospedin' %>
+         <%= link_to 'Gestor de Canais', channels_path %>
+        </li>
+        <li class="nav-item">
+        <%= image_tag 'icons/product-icons/reservation.svg', class: 'img-fluid rounded mr-3', alt: 'Motor de Reservas Hospedin' %>
+         <%= link_to 'Motor de Reservas', engine_path %>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <%= link_to 'Quem somos', about_path %>
+    </li>
+    <li class="nav-item">
+      <%= link_to 'Preços', nil, data: {toggle: 'modal', target: '#priceModal'} %>
+    </li>
+    <li class="nav-item">
+      <span class="nav-item-header">Educação</span>
+      <ul class="subnav-items">
+        <li class="nav-item">
+          <div class="nav-item-icon white bg-purple"><i data-feather="message-square"></i></div>
+          <%= link_to 'Blog', 'http://blog.hospedin.com', target: '_blank' %>
+        </li>
+        <li class="nav-item">
+          <div class="nav-item-icon white bg-red"><i data-feather="file-text"></i></div>
+          <%= link_to 'Materiais Educativos', libraries_path %>
+        </li>
+        <li class="nav-item">
+          <div class="nav-item-icon white bg-green"><i data-feather="pen-tool"></i></div>
+          <%= link_to 'Cursos', courses_path %>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
