@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Hospedin Icons';
+  font-style: normal;
+  src:
+    local('Hospedin Icons'),
+    local('Hospedin-Icons'),
+    url('../fonts/icons.woff2') format('woff2'),
+    url('../fonts/icons.woff') format('woff');
+    unicode-range: U+e7ec-e812;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "Hospedin Icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline;
+  text-decoration: none;
+  width: 1.5em;
+  padding-right: .5rem;
+  text-align: center;
+ 
+  font-variant: normal;
+  font-size: 1.5em;
+  text-transform: none;
+ 
+  line-height: 1.5em;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.m-0 {
+  &:before {
+    padding: 0;
+  }
+}
+ 
+.icon-24h:before { content: '\e806'; }
+.icon-alert:before { content: '\e7f5'; }
+.icon-arrow-down:before { content: '\e7f9'; }
+.icon-arrow-left:before { content: '\e7f8'; }
+.icon-arrow-right:before { content: '\e7f6'; }
+.icon-arrow-up:before { content: '\e7f7'; }
+.icon-calendar:before { content: '\e810'; }
+.icon-card:before { content: '\e7f4'; }
+.icon-circle:before { content: '\e7fe'; }
+.icon-circle-outline:before { content: '\e7ff'; }
+.icon-check-filled:before { content: '\e7ed'; }
+.icon-check-alt:before { content: '\e7f0'; }
+.icon-check:before { content: '\e7f3'; }
+.icon-chevron-down:before { content: '\e7fd';}
+.icon-chevron-left:before { content: '\e7fc'; }
+.icon-chevron-right:before { content: '\e7fa'; }
+.icon-chevron-up:before { content: '\e7fb'; }
+.icon-coffee:before { content: '\e802'; }
+.icon-drink:before { content: '\e801'; }
+.icon-error:before { content: '\e7f2'; }
+.icon-family:before { content: '\e80f'; }
+.icon-gym:before { content: '\e80e'; }
+.icon-image:before { content: '\e7ef'; }
+.icon-info:before { content: '\e7f1'; }
+.icon-lunch:before { content: '\e807'; }
+.icon-map:before { content: '\e812'; }
+.icon-not-smoke:before { content: '\e809'; }
+.icon-park:before { content: '\e803'; }
+.icon-pets:before { content: '\e804'; }
+.icon-poll:before { content: '\e805'; }
+.icon-remove:before { content: '\e7ee'; }
+.icon-ring:before { content: '\e808'; }
+.icon-smoke:before { content: '\e80b'; }
+.icon-snow:before { content: '\e800'; }
+.icon-towel:before { content: '\e80a'; }
+.icon-users:before { content: '\e811'; }
+.icon-watch:before { content: '\e80c'; }
+.icon-wifi:before { content: '\e80d'; }

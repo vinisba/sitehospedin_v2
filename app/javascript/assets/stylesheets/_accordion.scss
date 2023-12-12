@@ -1,0 +1,33 @@
+.faq-accordion {
+  .faq-item {
+    font-size: 1rem;
+    border-bottom: 1px solid #e5e9f2;
+
+    .faq-btn {
+      position: relative;
+      width: 100%;
+      border-radius: 0;
+      padding-left: 0;
+      padding-right: 40px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 0px;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background-image: url('../images/icons/chevron-down.png');
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        transition: .3s;
+      }
+
+      &.collapsed:after {
+        transform: rotate(0);
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+
+  a {
+    color: inherit;
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+h3,
+.h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+
+  .feather {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-top: -5px;
+    stroke-width: 1.5;
+  }
+}
+
+.h3 {
+  font-size: 1.5rem;
+}
+
+h4,
+.text-h4 {
+  display: block;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.small {
+  font-size: 0.87;
+}
+
+.text-mark {
+  font-family: Cairo, sans-serif;
+  font-weight: 700;
+}
+
+.white {
+  color: #fff;
+}
+
+.gray {
+  color: $gray;
+}
+
+.purple {
+  color: $purple-text;
+}
+
+.dark-purple {
+  color: $dark-purple;
+
+  .feather {
+    color: $dark-purple-icon;
+  }
+}
+
+.dark-blue {
+  color: $dark-blue;
+}
+
+.blue-link {
+  color: $blue-link;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.statistics-title {
+  margin-bottom: 40px;
+}
+
+.video-description {
+  font-size: 1rem;
+  font-family: Cairo, sans-serif;
+}
+
+.about-icon-1 {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1;
+  color: #efcf47;
+}
+
+.about-icon-2 {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1;
+  color: #765aa6;
+}
+
+.about-icon-3 {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1;
+  color: #ff4f6c;
+}
+
+.about-icon-4 {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1;
+  color: #32bbaa;
+}
+
+.team-description {
+  font-size: 1.12rem;
+}
+
+.purple-link {
+  color: #765aa5;
+  text-decoration: underline;
+}
+
+.midia-card {
+  h5 {
+    font-size: 1.12rem;
+    font-family: Cairo, sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.87rem;
+  }
+}
+
+.footer-title {
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.job-card {
+  font-size: 1rem;
+}
+
+label {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $dark-purple;
+}
+
+.size-default {
+  font-size: 1rem;
+}
+
+.icon-sm {
+  width: 30px;
+  height: 30px;
+  stroke-width: 1.5;
+}
+
+.text-value,
+.text-value-md,
+.text-value-lg {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  margin-top: -2px;
+}
+
+.text-value-md {
+  font-size: 2rem;
+}
+
+.text-value-lg {
+  font-size: 2.5rem;
+}
+
+.text-poppins {
+  font-family: Poppins, sans-serif;
+}
+
+.form-check-label {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .statistics-title {
+    margin-bottom: 90px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.18;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+
+    .feather {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

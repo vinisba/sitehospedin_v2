@@ -1,0 +1,121 @@
+#testimonial-video {
+  border-radius: 16px;
+  position: relative;
+}
+
+#testimonialsModal {
+  .modal-content {
+    background-color: transparent !important;
+    border: none !important;
+  }
+}
+
+.testimonial {
+  &-modal {
+    &-header {
+      border-bottom: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      button {
+        width: fit-content;
+
+        &:focus,
+        &:active {
+          outline: none;
+        }
+      }
+    }
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 !important;
+    }
+    &-close {
+      position: absolute;
+      right: 108px;
+      top: 16px;
+      // padding: 4px 8px;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background-color: $dark-purple;
+      border: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        line-height: 8px;
+        font-size: 24px;
+        color: #fff;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+
+    &-footer {
+      width: 316px !important;
+      background: rgba(118, 90, 165, 1);
+      padding: 24px;
+      position: absolute;
+      right: auto;
+      bottom: 0;
+      border-radius: 0px 0px 16px 16px;
+
+      .author-name {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+      }
+
+      .hotel-name {
+        font-size: 16px;
+        color: white;
+      }
+    }
+
+    @media screen and (max-width: 580px) {
+      &-close {
+        right: 56px;
+        top: 16px;
+        // padding: 4px 8px;
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.navigation {
+  &-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    img {
+      border-radius: 9999px;
+      border: 4px solid #29415e;
+      width: 64px;
+      height: 64px;
+      filter: grayscale(100%);
+    }
+  }
+
+  &-active {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    img {
+      border-radius: 9999px;
+      border: 4px solid #45c3d5;
+      // border: 4px solid #29415e;
+      width: 64px;
+      height: 64px;
+      filter: grayscale(0%);
+    }
+  }
+}

@@ -1,0 +1,127 @@
+footer {
+  background-color: $black-purple;
+  color: #fff;
+  font-size: 1rem;
+
+  .footer-header {
+    background-color: #20334a;
+
+    .mr-100 {
+      margin-right: 42px;
+    }
+
+    .company-sebrae {
+      width: 68px;
+    }
+    .company-startupsc {
+      width: 85px;
+    }
+    .company-exame {
+      width: 103px;
+    }
+    .company-pegn {
+      width: 88px;
+    }
+  }
+
+  .footer-info {
+    padding-top: 40px;
+  }
+
+  .footer-after {
+    margin-top: 40px;
+    font-size: 0.87rem;
+    border-top: 1px solid $dark-purple;
+  }
+
+  a:hover {
+    color: $dark-blue;
+  }
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  // margin-top: -4px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  // display: inline-block;
+  // margin-right: 10px;
+  // width: 30px;
+  // height: 30px;
+  // border-radius: 50%;
+  // background-color: #fff;
+  // vertical-align: middle;
+  // background-repeat: no-repeat;
+  // background-position: center;
+
+  // &:last-child {
+  //   margin-right: 0;
+  // }
+
+  // &.social-fb {
+  //   background-image: url("../images/social/facebook-logo.svg");
+  // }
+  // &.social-ig {
+  //   background-image: url("../images/social/instagram-logo.svg");
+  // }
+  // &.social-tw {
+  //   background-image: url("../images/social/icon-social-twitter.png");
+  // }
+  // &.social-gp {
+  //   background-image: url("../images/social/icon-social-gplus.png");
+  // }
+  // // &.social-vn {
+  // //   background-image: url("../images/social/icon-social-vimeo.png");
+  // // }
+  // &.social-yt {
+  //   background-image: url("../images/social/youtube-logo.svg");
+  // }
+  // &.social-lk {
+  //   background-image: url("../images/social/linkedin-logo.svg");
+  // }
+  // &.social-pd {
+  //   background-image: url("../images/social/microphone.svg");
+  //   // background-size: 100%;
+  //   // background-repeat: no-repeat;
+  //   // background-color: transparent;
+  // }
+
+  // &:last-child {
+  //   margin-right: none;
+  // }
+}
+@include media-breakpoint-up(lg) {
+  footer {
+    .footer-header {
+      .mr-100 {
+        margin-right: 112px;
+      }
+
+      .company-sebrae {
+        width: 87px;
+      }
+      .company-startupsc {
+        width: 100px;
+      }
+      .company-exame {
+        width: 125px;
+      }
+      .company-pegn {
+        width: 125px;
+      }
+    }
+
+    .footer-info {
+      padding-top: 80px;
+    }
+
+    .footer-after {
+      margin-top: 110px;
+    }
+  }
+}

@@ -1,0 +1,360 @@
+.banner {
+  position: relative;
+
+  p {
+    font-size: 1.12rem;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+}
+
+.homepage-banner {
+  position: relative;
+  h1 {
+    margin-bottom: 16px;
+  }
+  &_home-title {
+    white-space: nowrap;
+    margin-bottom: 0px;
+  }
+
+  b {
+    // color: red !important;
+    font-weight: 500 !important;
+  }
+}
+
+.animation-line {
+  // position: relative;
+  margin-top: 8px;
+  // display: flex;
+  // align-items: center;
+}
+
+.animation {
+  height: 88px;
+  width: 377px;
+  z-index: 10;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  // background-color: red !important;
+
+  animation: width-animation 18s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+.animation-mask {
+  width: 377px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2),
+    rgb(110, 110, 110) 20%,
+    rgb(110, 110, 110) 80%,
+    rgba(255, 255, 255, 0.2)
+  );
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2),
+    rgb(110, 110, 110) 20%,
+    rgb(110, 110, 110) 80%,
+    rgba(255, 255, 255, 0.2)
+  );
+  mask-type: alpha;
+}
+
+.animation h1 {
+  margin: 0;
+  height: 88px;
+  line-height: 88px !important;
+  width: 377px;
+  // width: fit-content;
+  animation: text-animation 18s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  // animation-delay: 4s;
+  white-space: nowrap;
+}
+
+@keyframes text-animation {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+
+  24% {
+    transform: translateY(-88px);
+  }
+
+  44% {
+    transform: translateY(-88px);
+  }
+
+  48% {
+    transform: translateY(-176px);
+  }
+  68% {
+    transform: translateY(-176px);
+  }
+  72% {
+    transform: translateY(-264px);
+  }
+  92% {
+    transform: translateY(-264px);
+  }
+
+  100% {
+    transform: translateY(-352px);
+  }
+}
+
+@keyframes width-animation {
+  0% {
+    width: 377px;
+    // @media screen and (max-width: 1200px) {
+    //   width: fit-content !important;
+    // }
+  }
+
+  20% {
+    width: 377px;
+    // @media screen and (max-width: 1200px) {
+    //   width: fit-content !important;
+    // }
+  }
+
+  24% {
+    width: 262px;
+    // @media screen and (max-width: 1200px) {
+    //   width: fit-content !important;
+    // }
+  }
+  44% {
+    width: 262px;
+    // @media screen and (max-width: 1200px) {
+    //   width: fit-content !important;
+    // }
+  }
+
+  48% {
+    width: 377px;
+    // width: 378px;
+  }
+
+  68% {
+    width: 377px;
+  }
+  72% {
+    width: 294px;
+  }
+
+  92% {
+    width: 294px;
+    // width: 377px;
+  }
+  100% {
+    width: 377px;
+  }
+}
+
+.about-banner {
+  padding-top: 124px;
+  min-height: 750px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -480px;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    width: 100%;
+    font-size: 1.12rem;
+    margin: 0 auto;
+  }
+}
+
+.library-banner {
+  margin-bottom: -390px;
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.12rem;
+  }
+}
+
+.kit-banner {
+  min-height: initial;
+  h1 {
+    font-size: 2.45rem;
+  }
+
+  .book {
+    margin-bottom: -340px;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}
+
+.paghotel-banner {
+  h1 {
+    line-height: 1.2;
+  }
+  p {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .banner p {
+    width: 342px;
+  }
+
+  .kit-banner {
+    p {
+      width: 100%;
+    }
+  }
+
+  .homepage-banner {
+    padding-top: 125px;
+
+    h1 {
+      margin-top: 54px;
+      line-height: 1.3;
+    }
+
+    .banner-preview {
+      position: absolute;
+      top: 20%;
+      right: 0;
+      width: 823px;
+      max-width: 60%;
+
+      .bullet {
+        position: absolute;
+        display: block;
+        width: 54px;
+        height: 54px;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 22px 23px 0 rgba(0, 0, 0, 0.19);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .feather {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -15px;
+          margin-left: -15px;
+          width: 30px;
+          height: 30px;
+          color: $purple;
+        }
+
+        &.bullet-like {
+          top: -40px;
+          left: 70%;
+          width: 80px;
+          height: 80px;
+        }
+
+        &.bullet-money {
+          top: 10%;
+          left: 6%;
+          width: 72px;
+          height: 72px;
+        }
+
+        &.bullet-time {
+          bottom: 16%;
+          left: 15%;
+        }
+
+        &.bullet-calendar {
+          bottom: 20px;
+          left: 70%;
+        }
+      }
+    }
+  }
+
+  .library-banner {
+    margin-bottom: -330px;
+
+    p {
+      font-size: 1.31rem;
+    }
+  }
+
+  .about-banner {
+    min-height: 850px;
+    margin-bottom: -580px;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      width: 80%;
+      font-size: 1.31rem;
+      font-family: Cairo, sans-serif;
+    }
+  }
+
+  .paghotel-banner {
+    min-height: 651px;
+    background-image: url("../images/masks/paghotel-hand.png"),
+      url("../images/masks/dark-blue.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: right bottom, center;
+
+    h1 {
+      width: 586px;
+      max-width: 100%;
+    }
+    p {
+      width: 90%;
+      max-width: 100%;
+    }
+  }
+}
+
+.banner-home {
+  position: absolute;
+  bottom: -200px;
+}
+
+@include media-breakpoint-up(xl) {
+  .banner {
+    p {
+      font-size: 1.31rem;
+      margin-bottom: 40px;
+    }
+  }
+  .homepage-banner {
+    h1 {
+      margin-top: 54px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 419px) {
+  .about-banner {
+    p {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.mask-purple {
+  padding-top: 108px;
+  padding-bottom: 40px;
+  min-height: 640px;
+  background-image: url("../images/masks/clouds.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mask-dark-purple {
+  padding-top: 108px;
+  padding-bottom: 40px;
+  min-height: 700px;
+  background-image: url("../images/masks/dark-purple.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mask-blue {
+  padding-top: 98px;
+  padding-bottom: 48px;
+  min-height: 702px;
+  background-image: url("../images/masks/blue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mask-light-blue {
+  padding-top: 108px;
+  padding-bottom: 46px;
+  min-height: 750px;
+  background-image: url("../images/masks/light-blue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mask-dark-blue {
+  padding-top: 130px;
+  padding-bottom: 0px;
+  min-height: 510px;
+}
+
+.mask-yellow {
+  padding-top: 108px;
+  padding-bottom: 48px;
+  min-height: 750px;
+  background-image: url("../images/masks/yellow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mask-red {
+  padding-top: 108px;
+  padding-bottom: 40px;
+  min-height: 750px;
+  background-image: url("../images/masks/red.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mask-green {
+  padding-top: 108px;
+  padding-bottom: 40px;
+  min-height: 750px;
+  background-image: url("../images/masks/green.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.mask-black {
+  padding-top: 108px;
+  padding-bottom: 40px;
+  min-height: 750px;
+  background-image: url("../images/masks/black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@include media-breakpoint-up(lg) {
+  .mask-purple {
+    padding-top: 200px;
+    padding-bottom: 110px;
+    min-height: 756px;
+  }
+
+  .mask-blue {
+    padding-top: 187px;
+    padding-bottom: 103px;
+    min-height: 750px;
+  }
+
+  .mask-red,
+  .mask-green,
+  .mask-black {
+    min-height: 680px;
+    padding-top: 150px;
+  }
+
+  .mask-light-blue {
+    padding-top: 117px;
+    padding-bottom: 134px;
+  }
+
+  .mask-yellow {
+    padding-top: 117px;
+    padding-bottom: 103px;
+    min-height: 750px;
+  }
+
+  .mask-dark-purple {
+    padding-top: 150px;
+  }
+}

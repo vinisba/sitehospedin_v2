@@ -1,0 +1,38 @@
+.hs-cookie-policy {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  display: block;
+  width: 480px;
+  max-width: 100%;
+  padding: 1rem;
+  background-color: rgba(#FFF, .95);
+  border-radius: 6px;
+  font-size: .875rem;
+  line-height: 1.3;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 9999999999;
+
+  .hs-cookie-policy-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+  }
+
+  .btn {
+    font-size: .875rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 1rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .hs-cookie-policy {
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: #FFF;
+  }
+}

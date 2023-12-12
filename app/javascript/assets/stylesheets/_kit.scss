@@ -1,0 +1,40 @@
+.section-kit {
+  padding-top: 280px !important;
+
+  .list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+
+      &::before {
+        content: '>';
+        display: inline-block;
+        margin-right: .7rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .kit-items {
+    p {
+      height: 110px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .section-kit {
+    padding-top: 3rem !important;
+  }
+
+  .kit-items {
+    p {
+      height: 156px;
+    }
+  }
+}

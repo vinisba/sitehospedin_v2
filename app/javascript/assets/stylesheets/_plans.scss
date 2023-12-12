@@ -1,0 +1,227 @@
+.plans {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e9f2;
+  border-radius: 5px;
+}
+
+.plans-select {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .plan {
+    position: relative;
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 22px;
+    padding-left: 34px;
+    padding-right: 24px;
+    color: $purple-text;
+    font-size: 1rem;
+    border-bottom: 1px solid #e5e9f2;
+    // border-right: 1px solid #e5e9f2;
+    box-sizing: border-box;
+    cursor: pointer;
+    @include transition(0.3s ease all);
+
+    &.plan-selected {
+      font-family: Cairo, sans-serif;
+      background-color: $dark-blue;
+      color: #fff;
+      border-color: $dark-blue;
+      cursor: auto;
+
+      &::before {
+        opacity: 0;
+      }
+    }
+
+    &:first-child {
+      border-top-left-radius: 5px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-color: transparent;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: $dark-blue;
+      border-right: 1px solid $dark-blue;
+
+      &::before {
+        color: #fff;
+      }
+    }
+
+    &::before {
+      content: "+";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 20px;
+      margin-top: -11px;
+      color: $purple-text;
+    }
+  }
+}
+
+.plans-header {
+  padding: 22px 32px;
+}
+
+.plan-wrap {
+  display: none;
+  opacity: 0;
+  transition: 0.7s;
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.plan-item {
+  position: relative;
+  display: table;
+  height: 100%;
+  padding-left: 35px;
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1rem;
+    color: $purple-text;
+  }
+
+  .feather {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-top: -13px;
+    color: $dark-purple;
+    stroke-width: 1.5;
+  }
+}
+
+.card-plans {
+  border-radius: 5px;
+  margin-bottom: -3rem;
+
+  & > div:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  & > div {
+    border-bottom: 1px solid #5688c4;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.plans-mobile {
+  .card {
+    border-color: #e5e9f2;
+  }
+
+  .card-header {
+    background-color: #fff;
+    border-color: #e5e9f2;
+    padding: 0;
+
+    .btn-link {
+      position: relative;
+      width: 100%;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-left: 52px;
+      padding-right: 24px;
+      text-align: left;
+      color: $purple-text;
+      font-family: Roboto, sans-serif;
+      font-size: 1.12rem;
+      text-decoration: none;
+      border-radius: initial;
+
+      .plan-see {
+        vertical-align: middle;
+        color: $dark-blue;
+      }
+
+      &:not(.collapsed) {
+        color: #fff;
+        background-color: $dark-blue;
+        font-family: Cairo, sans-serif;
+        padding-left: 24px;
+
+        &::before,
+        .plan-see {
+          display: none;
+        }
+      }
+
+      &::before {
+        content: "+";
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 24px;
+        margin-top: -15px;
+        color: $purple-text;
+        font-size: 30px;
+        font-weight: 300;
+        width: 30px;
+        height: 30px;
+        line-height: 1;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .plans-header {
+    padding: 16px 24px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .plan-wrap {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .card-plans {
+    & > div:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    & > div {
+      border-right: 1px solid #5688c4;
+      border-bottom: none;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .plan-wrap {
+    height: 490px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

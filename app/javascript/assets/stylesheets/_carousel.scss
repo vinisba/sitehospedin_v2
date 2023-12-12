@@ -1,0 +1,49 @@
+.carousel {
+  .owl-dots {
+    .owl-dot span { background: #d6ddee !important }
+    .owl-dot.active span { background: $dark-purple !important }
+  }
+
+  &.dots-left {
+    .owl-dots {
+      text-align: left;
+    }
+  }
+
+  &.dots-blue {
+    .owl-dots {
+      .owl-dot.active span { background: $light-blue !important }
+    }
+  }
+
+  &.dots-none {
+    .owl-dots { display: none }
+  }
+}
+
+.carousel-nav {
+  & > span {
+    display: inline-block;
+    cursor: pointer;
+    color: $dark-purple;
+  }
+
+  &.nav-red > span {
+    color: $red;
+  }
+
+  &.nav-white > span {
+    color: #FFF;
+  }
+
+  & > span.disabled {
+    color: $light-blue;
+    opacity: .2;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .carousel-nav {
+    display: none;
+  }
+}

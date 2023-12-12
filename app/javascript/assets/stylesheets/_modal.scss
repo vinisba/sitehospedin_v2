@@ -1,0 +1,155 @@
+.modal-price {
+  padding-right: 0 !important;
+  .modal-dialog {
+    max-width: none;
+    margin: 0;
+
+    .modal-content {
+      width: 100%;
+      min-height: 100vh;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: #fff;
+      color: $purple-text;
+      border: none;
+      border-radius: 0;
+      z-index: 1072;
+    }
+  }
+}
+
+.modal-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 6px;
+  background-color: $dark-blue;
+  transition: 0.7s;
+  z-index: 1500;
+}
+
+.modal-plus-icon {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #d6ddee;
+  border-radius: 50%;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -8px;
+    background-color: $dark-blue;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+.modal-plan-resume {
+  display: block;
+  border: 1px solid $card-gray;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.modal-back,
+.modal-close {
+  position: absolute;
+  top: 46px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    color: $dark-blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &.disabled,
+  &:disabled {
+    opacity: 0.2;
+  }
+}
+
+.modal-back {
+  left: 40px;
+}
+.modal-close {
+  right: 40px;
+}
+
+.tag-best-plan {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  display: block;
+  width: 56px;
+  height: 61px;
+  padding-top: 11px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-image: url(../images/icons/tag-yellow.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: $dark-purple;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  font-weight: 700;
+}
+
+.btn-modal-hint {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: $gray-blue;
+  border-radius: 3px;
+  border: none;
+  color: $dark-blue;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+
+  &:hover,
+  &.active,
+  &:active,
+  &:focus {
+    background-color: $gray-blue;
+    color: $dark-blue;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .modal-back,
+  .modal-close {
+    top: 36px;
+  }
+  .modal-back {
+    left: 15px;
+  }
+  .modal-close {
+    right: 15px;
+  }
+}

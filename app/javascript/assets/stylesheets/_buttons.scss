@@ -1,0 +1,102 @@
+.btn-white {
+  color: $dark-purple;
+  background-color: #fff;
+
+  &:hover {
+    background-color: #ffe14d;
+    color: $dark-purple;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: none;
+  }
+
+  &.btn-white-hover-alt {
+    &:hover {
+      background-color: $dark-purple;
+      color: #fff;
+    }
+  }
+}
+
+.btn-yellow {
+  color: $dark-purple;
+  background-color: $yellow;
+
+  &:hover {
+    background-color: darken($yellow, 20%);
+    color: $dark-purple;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: none;
+  }
+}
+
+.btn-dark-blue {
+  color: $white;
+  background-color: $dark-blue;
+
+  &:hover {
+    background-color: darken($dark-blue, 20%);
+    color: $white;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: none;
+  }
+}
+
+.btn-black-purple {
+  color: $white;
+  background-color: $black-purple;
+
+  &:hover {
+    background-color: darken($black-purple, 20%);
+    color: $white;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: none;
+  }
+}
+
+.btn-shadow {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-purple {
+  color: $dark-purple;
+  border-color: $dark-purple;
+  border-width: 2px;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover {
+    color: #fff;
+    background-color: $dark-purple;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($dark-purple, 0.5);
+  }
+}
+
+.btn-outline-icon {
+  color: $dark-purple;
+  border-color: $dark-purple;
+  border-width: 2px;
+
+  &::before {
+    content: "";
+    display: block;
+    background: url(../images/icons/whatsapp-icon.svg) no-repeat;
+    width: 24px;
+    height: 20px;
+    margin-right: 8px;
+  }
+}
